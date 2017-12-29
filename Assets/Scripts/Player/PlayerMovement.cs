@@ -36,5 +36,9 @@ public class PlayerMovement : MonoBehaviour
         {
             playerBody.velocity = new Vector3();
         }
+        else if(playerState.GetPlayerState() == PlayerConstants.STATE_LEAVINGCROSSING)
+        {
+            playerBody.velocity = transform.forward * WalkSpeed;
+        }
     }
 }

@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &15533972 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1446767743}
 --- !u!1 &19340288
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +413,95 @@ Transform:
   m_Father: {fileID: 502955005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &197397674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1195433869782080, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 197397675}
+  - component: {fileID: 197397678}
+  - component: {fileID: 197397677}
+  - component: {fileID: 197397676}
+  m_Layer: 0
+  m_Name: Fence Middle (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &197397675
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4535917773827726, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197397674}
+  m_LocalRotation: {x: -0.5, y: 0.49999994, z: 0.5000001, w: 0.49999994}
+  m_LocalPosition: {x: 4.630004, y: 0, z: 11.990004}
+  m_LocalScale: {x: 1.0000015, y: 1.0000012, z: 1.0000011}
+  m_Children: []
+  m_Father: {fileID: 503688270}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &197397676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65882441715635462, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197397674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3848584, y: 0.48900598, z: 1.5011624}
+  m_Center: {x: -0.00000007447114, y: -0.000000044738126, z: 0.7505811}
+--- !u!23 &197397677
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23800005206553854, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197397674}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 730aa201e5de44f428e6b1fb47e7a2ce, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &197397678
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33373493794677626, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197397674}
+  m_Mesh: {fileID: 4300092, guid: 299bf6902d84010429e91f5291287b50, type: 3}
 --- !u!1 &203219140
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +682,95 @@ Transform:
   m_Father: {fileID: 865423471}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &294943788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1499985162878176, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 294943789}
+  - component: {fileID: 294943792}
+  - component: {fileID: 294943791}
+  - component: {fileID: 294943790}
+  m_Layer: 0
+  m_Name: Fence (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &294943789
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4153993584929992, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294943788}
+  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 4.6200023, y: 0, z: 10.050005}
+  m_LocalScale: {x: 0.15905002, y: 0.15905003, z: 0.37468}
+  m_Children: []
+  m_Father: {fileID: 503688270}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &294943790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65401637264591408, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294943788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.154936, y: 4.154935, z: 5.191028}
+  m_Center: {x: 0, y: 0, z: 2.595515}
+--- !u!23 &294943791
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23341578964444956, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294943788}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 730aa201e5de44f428e6b1fb47e7a2ce, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &294943792
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33026073052393808, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294943788}
+  m_Mesh: {fileID: 4300078, guid: 299bf6902d84010429e91f5291287b50, type: 3}
 --- !u!1 &301445589
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +1016,95 @@ Transform:
   m_Father: {fileID: 2062120529}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &421824068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1957225241129514, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 421824069}
+  - component: {fileID: 421824072}
+  - component: {fileID: 421824071}
+  - component: {fileID: 421824070}
+  m_Layer: 0
+  m_Name: Fence Middle (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &421824069
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4853852356256440, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421824068}
+  m_LocalRotation: {x: -0.5, y: 0.49999994, z: 0.5000001, w: 0.49999994}
+  m_LocalPosition: {x: 4.6300044, y: 0, z: 8.090006}
+  m_LocalScale: {x: 1.0000015, y: 1.0000012, z: 1.0000011}
+  m_Children: []
+  m_Father: {fileID: 503688270}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &421824070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65523345347004070, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421824068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3848584, y: 0.48900598, z: 1.5011624}
+  m_Center: {x: -0.00000007447114, y: -0.000000044738126, z: 0.7505811}
+--- !u!23 &421824071
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23929443410825068, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421824068}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 730aa201e5de44f428e6b1fb47e7a2ce, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &421824072
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33924266241965436, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421824068}
+  m_Mesh: {fileID: 4300092, guid: 299bf6902d84010429e91f5291287b50, type: 3}
 --- !u!1 &454828577
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1268,11 @@ Transform:
   m_Father: {fileID: 1742312688}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &503688270 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4014713418190596, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 881751119}
 --- !u!1 &521594108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1342,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4259173884015552, guid: 6e4ee2a972ab64646a92575b17d0067b, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e4ee2a972ab64646a92575b17d0067b, type: 2}
@@ -1444,8 +1721,10 @@ Transform:
   m_LocalPosition: {x: -15.100549, y: -8.229604, z: 6.55179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1111212394}
   - {fileID: 1899761197}
   - {fileID: 1593200823}
+  - {fileID: 15533972}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1957,16 +2236,26 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
         - HutongGames.PlayMaker.Actions.SetAnimatorBool
+        - HutongGames.PlayMaker.Actions.SetAnimatorBool
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 5f9135045f913504
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000000
+        actionStartIndex: 00000000050000000a000000
+        actionHashCodes: 5f9135045f9135045f913504
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1829411295}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2002,6 +2291,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Idle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Walk
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -2021,18 +2316,24 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000000000000000
+        byteData: 000000000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001100000001000000070000001400000012000000110000000100000007000000
+        paramDataType: 140000001200000011000000010000000700000014000000120000001100000001000000070000001400000012000000110000000100000007000000
         paramName:
         - gameObject
         - parameter
@@ -2044,8 +2345,13 @@ MonoBehaviour:
         - Value
         - everyFrame
         - everyFrameOption
-        paramDataPos: 00000000000000000000000000000000010000000100000001000000010000000500000006000000
-        paramByteDataSize: 00000000000000000000000001000000040000000000000000000000000000000100000004000000
+        - gameObject
+        - parameter
+        - Value
+        - everyFrame
+        - everyFrameOption
+        paramDataPos: 000000000000000000000000000000000100000001000000010000000100000005000000060000000200000002000000020000000a0000000b000000
+        paramByteDataSize: 000000000000000000000000010000000400000000000000000000000000000001000000040000000000000000000000000000000100000004000000
     - name: CrossingBoundaries
       description: 
       colorIndex: 0
@@ -2314,8 +2620,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 611
-        y: 421
+        x: 619.5156
+        y: 439.27344
         width: 129
         height: 32
       isBreakpoint: 0
@@ -2331,53 +2637,107 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetAnimatorBool
+        - HutongGames.PlayMaker.Actions.SetAnimatorBool
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0000
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 5f9135045f913504
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1829411295}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1829411295}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Idle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Walk
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 
+        byteData: 00000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 14000000120000001100000001000000070000001400000012000000110000000100000007000000
+        paramName:
+        - gameObject
+        - parameter
+        - Value
+        - everyFrame
+        - everyFrameOption
+        - gameObject
+        - parameter
+        - Value
+        - everyFrame
+        - everyFrameOption
+        paramDataPos: 00000000000000000000000000000000010000000100000001000000010000000500000006000000
+        paramByteDataSize: 00000000000000000000000001000000040000000000000000000000000000000100000004000000
     - name: ChooseLeft
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 409
-        y: 489
+        x: 411.42188
+        y: 498.73438
         width: 117
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -2387,6 +2747,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: LeavingCrossing
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InvalidInput
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: AtCrossing
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2413,7 +2781,7 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams:
         - FunctionName: Rotate
-          parameterType: string
+          parameterType: Enum
           BoolParameter:
             useVariable: 0
             name: 
@@ -2456,7 +2824,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: left
+            value: 
           Vector2Parameter:
             useVariable: 0
             name: 
@@ -2519,7 +2887,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: Constants+Directions
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -2528,7 +2896,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -2571,10 +2939,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 412
-        y: 546
+        x: 408.3203
+        y: 560.6172
         width: 117
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -2584,6 +2952,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: LeavingCrossing
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InvalidInput
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: AtCrossing
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2610,7 +2986,7 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams:
         - FunctionName: Rotate
-          parameterType: string
+          parameterType: Enum
           BoolParameter:
             useVariable: 0
             name: 
@@ -2653,7 +3029,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: right
+            value: 
           Vector2Parameter:
             useVariable: 0
             name: 
@@ -2716,8 +3092,8 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
-            intValue: 0
+            enumName: Constants+Directions
+            intValue: 1
           ArrayParameter:
             useVariable: 0
             name: 
@@ -2768,10 +3144,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 408
-        y: 430.01562
+        x: 410.42188
+        y: 434.875
         width: 124
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -2784,63 +3160,11 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
-      actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
-    - name: ChooseBackward
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 404
-        y: 368
-        width: 134
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
       - fsmEvent:
-          name: LeaveCrossing
+          name: InvalidInput
           isSystemEvent: 0
           isGlobal: 0
-        toState: LeavingCrossing
+        toState: AtCrossing
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2867,7 +3191,7 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams:
         - FunctionName: Rotate
-          parameterType: string
+          parameterType: Enum
           BoolParameter:
             useVariable: 0
             name: 
@@ -2910,7 +3234,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: backwards
+            value: 
           Vector2Parameter:
             useVariable: 0
             name: 
@@ -2973,8 +3297,213 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
-            intValue: 0
+            enumName: Constants+Directions
+            intValue: 2
+          ArrayParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: UnityEngine.Object
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000000001000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000070000000700000015000000
+        paramName:
+        - gameObject
+        - delivery
+        - options
+        - functionCall
+        paramDataPos: 00000000000000000400000000000000
+        paramByteDataSize: 00000000040000000400000000000000
+    - name: ChooseBackward
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 408.85938
+        y: 369.20312
+        width: 134
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: LeaveCrossing
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: LeavingCrossing
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: InvalidInput
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: AtCrossing
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendMessage
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 91d45a00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams:
+        - FunctionName: Rotate
+          parameterType: Enum
+          BoolParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          FloatParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          IntParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          GameObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+          ObjectParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          StringParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          Vector2Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0}
+          Vector3Parameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0}
+          RectParamater:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value:
+              serializedVersion: 2
+              x: 0
+              y: 0
+              width: 0
+              height: 0
+          QuaternionParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {x: 0, y: 0, z: 0, w: 0}
+          MaterialParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          TextureParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            typeName: 
+            value: {fileID: 0}
+          ColorParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {r: 0, g: 0, b: 0, a: 1}
+          EnumParameter:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            enumName: Constants+Directions
+            intValue: 3
           ArrayParameter:
             useVariable: 0
             name: 
@@ -3040,6 +3569,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: HitCrossing
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: InvalidInput
       isSystemEvent: 0
       isGlobal: 0
     - name: LeaveCrossing
@@ -3390,6 +3922,58 @@ Transform:
   m_Father: {fileID: 1364979181}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &881751119
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 734774871}
+    m_Modifications:
+    - target: {fileID: 114624975271600354, guid: 496faa7ad3f941b47a52a48e01721098,
+        type: 2}
+      propertyPath: AllowedDirections.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 43.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114624975271600354, guid: 496faa7ad3f941b47a52a48e01721098,
+        type: 2}
+      propertyPath: AllowedDirections.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 496faa7ad3f941b47a52a48e01721098, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &893576342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,6 +4186,11 @@ Transform:
   m_Father: {fileID: 2118484934}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1111212394 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4049289665126668, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 881751119}
 --- !u!1 &1119828346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +4478,95 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!1 &1222159834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1819829807526648, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1222159835}
+  - component: {fileID: 1222159838}
+  - component: {fileID: 1222159837}
+  - component: {fileID: 1222159836}
+  m_Layer: 0
+  m_Name: Fence Pillar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1222159835
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4664672247046798, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222159834}
+  m_LocalRotation: {x: -0.5, y: 0.49999994, z: 0.5000001, w: 0.49999994}
+  m_LocalPosition: {x: 4.2081137, y: 0.016373634, z: 14.591318}
+  m_LocalScale: {x: 1.0000015, y: 1.0000012, z: 1.0000011}
+  m_Children: []
+  m_Father: {fileID: 503688270}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1222159836
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65256068075417364, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222159834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8859174, y: 1.7926929, z: 2.789304}
+  m_Center: {x: 0.05211409, y: -0.00060956634, z: 1.3782797}
+--- !u!23 &1222159837
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23384760483552388, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222159834}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 730aa201e5de44f428e6b1fb47e7a2ce, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1222159838
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33046305152648338, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222159834}
+  m_Mesh: {fileID: 4300080, guid: 299bf6902d84010429e91f5291287b50, type: 3}
 --- !u!1 &1230551798
 GameObject:
   m_ObjectHideFlags: 0
@@ -4260,6 +4938,48 @@ Transform:
   m_Father: {fileID: 2062120529}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1446767743
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 734774871}
+    m_Modifications:
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 43.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868476313154782, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b70a72af24103fc4eba88df185a5acaf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1456534194
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,23 +5105,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4633369593386898, guid: 5d0b7ef02eb46ac4f917be6ffa90b2de, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538821618715076, guid: 5d0b7ef02eb46ac4f917be6ffa90b2de, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538821618715076, guid: 5d0b7ef02eb46ac4f917be6ffa90b2de, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.00000002980233
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538821618715076, guid: 5d0b7ef02eb46ac4f917be6ffa90b2de, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000002980233
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538821618715076, guid: 5d0b7ef02eb46ac4f917be6ffa90b2de, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d0b7ef02eb46ac4f917be6ffa90b2de, type: 2}
@@ -4566,6 +5270,95 @@ Transform:
   m_Father: {fileID: 1947914772}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1674730582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1009363820368486, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1674730583}
+  - component: {fileID: 1674730586}
+  - component: {fileID: 1674730585}
+  - component: {fileID: 1674730584}
+  m_Layer: 0
+  m_Name: Fence (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1674730583
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4806883645275628, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1674730582}
+  m_LocalRotation: {x: -0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 4.62, y: -0, z: 6.15}
+  m_LocalScale: {x: 0.15905002, y: 0.15905003, z: 0.37468}
+  m_Children: []
+  m_Father: {fileID: 503688270}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1674730584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65811794773105796, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1674730582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.154936, y: 4.154935, z: 5.191028}
+  m_Center: {x: 0, y: 0, z: 2.595515}
+--- !u!23 &1674730585
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23979132412094930, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1674730582}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 730aa201e5de44f428e6b1fb47e7a2ce, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1674730586
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33547395563009192, guid: 496faa7ad3f941b47a52a48e01721098,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1674730582}
+  m_Mesh: {fileID: 4300078, guid: 299bf6902d84010429e91f5291287b50, type: 3}
 --- !u!1 &1684563559
 GameObject:
   m_ObjectHideFlags: 0

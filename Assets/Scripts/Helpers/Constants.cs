@@ -30,6 +30,7 @@ public static class PlayerConstants
     public readonly static string EVENT_GORIGHT = "GoRight";
     public readonly static string EVENT_GOFORWARD = "GoForward";
     public readonly static string EVENT_GOBACKWARD = "GoBackward";
+    public readonly static string EVENT_INVALIDINPUT = "InvalidInput";
 
     public readonly static string STATE_RUNNING = "RunningToNextCrossing";
     public readonly static string STATE_COMINGTOCROSSING = "ComingToCrossing";

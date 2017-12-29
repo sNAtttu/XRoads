@@ -88,7 +88,7 @@ public class PlayerState : MonoBehaviour
         }
         else if (other.tag == Constants.TAG_GROUNDAFTERCROSSING)
         {
-            Debug.Log("Leaving to normal ground");
+            SendPlayerEvent(PlayerConstants.EVENT_EXITCROSSING);
         }
     }
 }
