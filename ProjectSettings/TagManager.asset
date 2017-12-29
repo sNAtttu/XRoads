@@ -9,6 +9,7 @@ TagManager:
   - Crossing
   - GroundAfterCrossing
   - MiddlePoint
+  - Exit
   layers:
   - Default
   - TransparentFX

@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(playerState.GetPlayerState() == PlayerConstants.STATE_COMINGTOCROSSING)
         {
-            playerBody.velocity = transform.forward * WalkSpeed;
+            playerBody.velocity = transform.forward * RunSpeed;
         }
         else if(playerState.GetPlayerState() == PlayerConstants.STATE_CROSSINGBOUNDARIES)
         {
@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(playerState.GetPlayerState() == PlayerConstants.STATE_LEAVINGCROSSING)
         {
-            playerBody.velocity = transform.forward * WalkSpeed;
+            playerBody.velocity = transform.forward * RunSpeed;
         }
     }
 }

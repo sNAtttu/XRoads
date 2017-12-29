@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayMakerFSM))]
 public class PlayerState : MonoBehaviour
@@ -73,6 +74,10 @@ public class PlayerState : MonoBehaviour
         else if(other.tag == Constants.TAG_GROUNDAFTERCROSSING)
         {
             Debug.Log("After the crossing");
+        }
+        else if(other.tag == Constants.TAG_EXIT)
+        {
+            SceneManager.LoadScene(Constants.SCENE_SHOP);
         }
 
     }
