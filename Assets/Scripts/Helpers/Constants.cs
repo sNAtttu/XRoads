@@ -11,8 +11,9 @@ public static class Constants
     public readonly static string TAG_GROUNDAFTERCROSSING = "GroundAfterCrossing";
     public readonly static string TAG_EXIT = "Exit";
 
-    public readonly static int SCENE_MAIN = 0;
-    public readonly static int SCENE_SHOP = 1;
+    public readonly static int SCENE_STARTMENU = 0;
+    public readonly static int SCENE_MAIN = 1;
+    public readonly static int SCENE_SHOP = 2;
 
     public enum Directions
     {
