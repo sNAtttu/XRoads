@@ -1158,6 +1158,7 @@ GameObject:
   - component: {fileID: 572924784}
   - component: {fileID: 572924786}
   - component: {fileID: 572924785}
+  - component: {fileID: 572924787}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1543,6 +1544,17 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &572924787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572924783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efab40f04fa73348902446a5cc7def1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &577017452
 GameObject:
   m_ObjectHideFlags: 0
