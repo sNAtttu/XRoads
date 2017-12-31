@@ -11,6 +11,8 @@ public static class Constants
     public readonly static string TAG_GROUNDAFTERCROSSING = "GroundAfterCrossing";
     public readonly static string TAG_EXIT = "Exit";
 
+    public readonly static string PATH_USERDATA = "userData.json";
+
     public readonly static int SCENE_STARTMENU = 0;
     public readonly static int SCENE_MAIN = 1;
     public readonly static int SCENE_SHOP = 2;
@@ -20,6 +22,12 @@ public static class Constants
         Left, Right, Forward, Backward
     }
 
+}
+
+public static class StartMenuConstants
+{
+    public readonly static string EVENT_SETTINGSFOUND = "SettingsFound";
+    public readonly static string EVENT_SETTINGSNOTFOUND = "SettingsNotFound";
 }
 
 public static class PlayerConstants

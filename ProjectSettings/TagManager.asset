@@ -10,6 +10,7 @@ TagManager:
   - GroundAfterCrossing
   - MiddlePoint
   - Exit
+  - UsernameInput
   layers:
   - Default
   - TransparentFX

@@ -5,44 +5,27 @@ using UnityEngine;
 
 public static class FileService
 {
-    public static readonly string UserFileName = "userData.json";
+    public static User UserData;
 
-    public static void SaveObject<T>(T Object)
+    public static void SaveObject<T>(T Object, string fileName)
     {
         var jsonData = JsonUtility.ToJson(Object);
-        var filepath = Application.persistentDataPath + UserFileName;
-        File.WriteAllText(filepath, jsonData);
+        var filePath = Application.persistentDataPath + fileName;
+        File.WriteAllText(filePath, jsonData);
     }
 
-    ///// <summary>
-    ///// Saves player data as json to persistent data path. 
-    ///// Overwrites every single time player data.
-    ///// </summary>
-    ///// <param name="playerData"></param>
-    //public static void SavePlayerData(Player playerData)
-    //{
-    //    var playerJson = JsonUtility.ToJson(playerData);
-    //    var filePath = Application.persistentDataPath + PlayerDataPath;
-    //    File.WriteAllText(filePath, playerJson);
-    //}
-    ///// <summary>
-    ///// Handle exceptions better
-    ///// </summary>
-    ///// <returns></returns>
-    //public static Player LoadPlayerData()
-    //{
-    //    try
-    //    {
-    //        var filePath = Application.persistentDataPath + PlayerDataPath;
-    //        var playerJson = File.ReadAllText(filePath);
-    //        Player player = JsonUtility.FromJson<Player>(playerJson);
-    //        return player;
-    //    }
-    //    catch (FileNotFoundException fex)
-    //    {
-    //        Debug.Log(fex.Message);
-    //        throw fex;
-    //    }
-    //}
-
+    public static T LoadData<T>(string fileName)
+    {
+        try
+        {
+            var filePath = Application.persistentDataPath + fileName;
+            var jsonData = File.ReadAllText(filePath);
+            T loadedObject = JsonUtility.FromJson<T>(jsonData);
+            return loadedObject;
+        }
+        catch(FileNotFoundException fex)
+        {
+            throw fex;
+        }
+    }
 }

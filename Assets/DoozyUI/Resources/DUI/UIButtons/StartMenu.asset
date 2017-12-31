@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Name: StartMenu
   m_EditorClassIdentifier: 
   data:
+  - BackBtn
   - ConfirmUsernameBtn
   - SettingsBtn
-  - BackBtn
+  - QuitBtn
+  - NewGameBtn
+  - ContinueBtn
