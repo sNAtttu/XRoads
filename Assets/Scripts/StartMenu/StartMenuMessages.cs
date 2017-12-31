@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -22,6 +23,16 @@ public class StartMenuMessages : MonoBehaviour
             UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSFOUND);
         }
         catch (FileNotFoundException)
+        {
+            Debug.Log("Settings not found, send event");
+            UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSNOTFOUND);
+        }
+        catch (DirectoryNotFoundException)
+        {
+            Debug.Log("Directory not found, send event");
+            UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSNOTFOUND);
+        }
+        catch (Exception)
         {
             UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSNOTFOUND);
         }

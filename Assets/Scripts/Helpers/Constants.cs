@@ -11,7 +11,7 @@ public static class Constants
     public readonly static string TAG_GROUNDAFTERCROSSING = "GroundAfterCrossing";
     public readonly static string TAG_EXIT = "Exit";
 
-    public readonly static string PATH_USERDATA = "userData.json";
+    public readonly static string PATH_USERDATA = "/userData.json";
 
     public readonly static int SCENE_STARTMENU = 0;
     public readonly static int SCENE_MAIN = 1;

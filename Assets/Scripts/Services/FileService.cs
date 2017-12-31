@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -7,25 +8,36 @@ public static class FileService
 {
     public static User UserData;
 
-    public static void SaveObject<T>(T Object, string fileName)
+    public static void SaveObject<T>(T Object, string filePath)
     {
         var jsonData = JsonUtility.ToJson(Object);
-        var filePath = Application.persistentDataPath + fileName;
-        File.WriteAllText(filePath, jsonData);
+        var path = Application.persistentDataPath + filePath;
+        File.WriteAllText(path, jsonData);
     }
 
-    public static T LoadData<T>(string fileName)
+    public static T LoadData<T>(string filePath)
     {
         try
         {
-            var filePath = Application.persistentDataPath + fileName;
-            var jsonData = File.ReadAllText(filePath);
+            var path = Application.persistentDataPath + filePath;
+            var jsonData = File.ReadAllText(path);
             T loadedObject = JsonUtility.FromJson<T>(jsonData);
             return loadedObject;
         }
         catch(FileNotFoundException fex)
         {
+            Debug.LogError(fex);
             throw fex;
+        }
+        catch(DirectoryNotFoundException dex)
+        {
+            Debug.LogError(dex);
+            throw dex;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex);
+            throw ex;
         }
     }
 }
