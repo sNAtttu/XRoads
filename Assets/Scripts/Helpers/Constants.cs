@@ -24,6 +24,19 @@ public static class Constants
 
 }
 
+public static class ShopSceneConstants
+{
+    public readonly static string EVENT_CLEARSELECTION = "ClearSelection";
+    public readonly static string EVENT_SELECT_BLACKSMITH = "SelectBlacksmith";
+    public readonly static string EVENT_SELECT_INN = "SelectInn";
+    public readonly static string EVENT_SELECT_ENCHANTER = "SelectEnchanter";
+
+    public readonly static string TAG_BLACKSMITH = "Blacksmith";
+    public readonly static string TAG_INN = "Inn";
+    public readonly static string TAG_ENCHANTER = "Enchanter";
+
+}
+
 public static class StartMenuConstants
 {
     public readonly static string EVENT_SETTINGSFOUND = "SettingsFound";

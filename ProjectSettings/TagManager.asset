@@ -11,6 +11,9 @@ TagManager:
   - MiddlePoint
   - Exit
   - UsernameInput
+  - Blacksmith
+  - Inn
+  - Enchanter
   layers:
   - Default
   - TransparentFX
