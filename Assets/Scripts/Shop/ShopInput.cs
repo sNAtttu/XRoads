@@ -28,4 +28,16 @@ public class ShopInput : MonoBehaviour
         FoodAmountText.text = string.Format("{0}", currentAmount);
         inventory.ChangeFoodAmount(false);
     }
+    public void RepairAll()
+    {
+        Debug.Log("Repair all items");
+    }
+    public void BuyHasteBuff()
+    {
+        Debug.Log("Haste");
+    }
+    public void ClearSelection()
+    {
+       GetComponent<PlayMakerFSM>().SendEvent("ClearSelection");
+    }
 }

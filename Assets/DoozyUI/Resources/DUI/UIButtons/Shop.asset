@@ -13,4 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - AddFoodBtn
+  - BuyHaste
+  - ClearSelectionInn
   - MinusFoodBtn
+  - RepairAll
+  - ClearSelectionBlacksmith
+  - ClearSelectionEnchanter
