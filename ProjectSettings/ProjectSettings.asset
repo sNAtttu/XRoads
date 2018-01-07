@@ -647,11 +647,11 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Build: 0
+    Build: 1
     Collab: 0
     ErrorHub: 0
     Hub: 0
-    UNet: 0
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 2286b4a5-0513-4a3c-a0af-23a46f6968e6
