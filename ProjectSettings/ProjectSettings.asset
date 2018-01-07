@@ -654,9 +654,9 @@ PlayerSettings:
     UNet: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 2286b4a5-0513-4a3c-a0af-23a46f6968e6
+  projectName: Xroads
+  organizationId: santeri-nousiainen
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
