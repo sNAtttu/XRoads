@@ -10,6 +10,6 @@ public class Character
     public int Lives;
     public int FoodAmount;
 
-    public Appereance Appereance;
+    public string SelectedPrefab;
     public Inventory Inventory;
 }
