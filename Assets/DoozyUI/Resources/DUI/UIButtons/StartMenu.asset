@@ -14,7 +14,8 @@ MonoBehaviour:
   data:
   - BackBtn
   - ConfirmUsernameBtn
-  - SettingsBtn
-  - QuitBtn
-  - NewGameBtn
   - ContinueBtn
+  - NewGameBtn
+  - QuitBtn
+  - SettingsBtn
+  - 

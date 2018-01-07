@@ -24,6 +24,10 @@ public class StartMenuMessages : MonoBehaviour
             FileService.UserData = userData;
             UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSFOUND);
             UIManager.SetWelcomeTitle(userData.Username);
+            if(userData.CharacterCreated)
+            {
+                UIManager.EnableContinueButton();
+            }
         }
         catch (FileNotFoundException)
         {
@@ -69,6 +73,7 @@ public class StartMenuMessages : MonoBehaviour
             Character = null
         };
         FileService.SaveObject<User>(user, Constants.PATH_USERDATA);
+        UIManager.SetWelcomeTitle(usernameText);
     }
 
 }
