@@ -8,10 +8,12 @@ using UnityEngine.UI;
 public class StartMenuMessages : MonoBehaviour
 {
     private PlayMakerFSM UIManagerFSM;
+    private StartMenuUIManager UIManager;
 
     private void Awake()
     {
         UIManagerFSM = GetComponent<PlayMakerFSM>();
+        UIManager = GetComponent<StartMenuUIManager>();
     }
 
     public void LoadUserProfile()
@@ -21,6 +23,7 @@ public class StartMenuMessages : MonoBehaviour
             var userData = FileService.LoadData<User>(Constants.PATH_USERDATA);
             FileService.UserData = userData;
             UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSFOUND);
+            UIManager.SetWelcomeTitle(userData.Username);
         }
         catch (FileNotFoundException)
         {
