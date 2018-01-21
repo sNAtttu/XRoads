@@ -31,6 +31,7 @@ namespace Helpers
         public static readonly string EventSelectCoin = "ChooseCoinCharacter";
         public static readonly string EventSelectLuck = "ChooseLuckCharacter";
         public static readonly string EventSelectStrength = "ChooseStrengthCharacter";
+        public static readonly string ConfirmCharacter = "ConfirmCharacter";
 
         public static readonly string CharacterNameLuck = "San Toro";
         public static readonly string CharacterNameCoin = "Ottoman";

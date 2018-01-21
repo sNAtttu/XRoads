@@ -60,5 +60,10 @@ namespace CharacterCreation
                     .SetCharacterNameText(selectedCharacter.GetComponent<PlayerInformation>());
             
         }
+
+        public void ConfirmCharacter()
+        {
+            GetComponent<PlayMakerFSM>().SendEvent(CharacterCreationConstants.ConfirmCharacter);
+        }
     }
 }
