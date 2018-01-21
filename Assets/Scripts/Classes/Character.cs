@@ -1,15 +1,18 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-[Serializable]
-public class Character
+namespace Classes
 {
-    public int Coins;
-    public int Lives;
-    public int FoodAmount;
+    [Serializable]
+    public class Character
+    {
+        public string Name;
+        public string Description;
 
-    public string SelectedPrefab;
-    public Inventory Inventory;
+        public int Coins;
+        public int Lives;
+        public int FoodAmount;
+        public int Strength;
+
+        public Inventory Inventory;
+    }
 }

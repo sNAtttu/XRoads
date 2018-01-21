@@ -114,879 +114,104 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &21658088
+--- !u!1001 &90094615
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1079008726}
+    m_Modifications:
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000024689058
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000000036156251
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 408576, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2202734d3977cf24cb40acf973eed6c4, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &357433088 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 21658089}
-  - component: {fileID: 21658091}
-  - component: {fileID: 21658090}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &21658089
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 21658088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 322671036}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &21658090
+  m_PrefabParentObject: {fileID: 1589306719382336, guid: d08bf9dad6ea3c241873cc367c363008,
+    type: 2}
+  m_PrefabInternal: {fileID: 1673893078}
+--- !u!114 &357433089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 21658088}
+  m_GameObject: {fileID: 357433088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb53d83f88bef84f87fc9b90d5ada37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a35014516cc65e34a81647023272785c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &21658091
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 21658088}
---- !u!1 &61587653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 61587654}
-  - component: {fileID: 61587656}
-  - component: {fileID: 61587655}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &61587654
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61587653}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1157332022}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &61587655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61587653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a35014516cc65e34a81647023272785c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &61587656
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61587653}
---- !u!1 &322671035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 322671036}
-  - component: {fileID: 322671038}
-  - component: {fileID: 322671037}
-  m_Layer: 0
-  m_Name: UIB - SelectClothed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &322671036
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 322671035}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 21658089}
-  - {fileID: 1515736374}
-  m_Father: {fileID: 1773911776}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -122.84259}
-  m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &322671037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 322671035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 682849f091f20484485c3a8e6c1e0b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonNameReference:
-    buttonName: 
-  onClickSoundReference:
-    onClickSound: 
-  useNormalStateAnimations: 0
-  useHighlightedStateAnimations: 0
-  onClickAnimationSettings:
-    onClickAnimationsPresetName: DefaultPreset
-    punchPositionEnabled: 0
-    punchPositionPunch: {x: 0, y: 20}
-    punchPositionSnapping: 0
-    punchPositionDuration: 0.2
-    punchPositionVibrato: 4
-    punchPositionElasticity: 0.5
-    punchPositionDelay: 0
-    punchRotationEnabled: 0
-    punchRotationPunch: {x: 0, y: 0, z: 30}
-    punchRotationDuration: 0.2
-    punchRotationVibrato: 4
-    punchRotationElasticity: 0.5
-    punchRotationDelay: 0
-    punchScaleEnabled: 0
-    punchScalePunch: {x: 0.2, y: 0.2, z: 0}
-    punchScaleDuration: 0.2
-    punchScaleVibrato: 4
-    punchScaleElasticity: 0.5
-    punchScaleDelay: 0
-  normalAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  highlightedAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  backButton: 0
-  showElements: []
-  hideElements: []
-  gameEvents: []
-  debug: 0
-  buttonCategory: CharacterCustomization
-  buttonName: SelectClothed
-  allowMultipleClicks: 1
-  deselectButtonOnClick: 1
-  disableButtonInterval: 0.4
-  addToNavigationHistory: 0
-  useOnPointerEnter: 0
-  onPointerEnterDisableInterval: 0.4
-  onPointerEnterSound: ~No Sound~
-  customOnPointerEnterSound: 0
-  OnPointerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerEnterPunchPresetCategory: Uncategorized
-  onPointerEnterPunchPresetName: DefaultPreset
-  loadOnPointerEnterPunchPresetAtRuntime: 0
-  onPointerEnterPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerEnterGameEvents: []
-  onPointerEnterNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerExit: 0
-  onPointerExitDisableInterval: 0.4
-  onPointerExitSound: ~No Sound~
-  customOnPointerExitSound: 0
-  OnPointerExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerExitPunchPresetCategory: Uncategorized
-  onPointerExitPunchPresetName: DefaultPreset
-  loadOnPointerExitPunchPresetAtRuntime: 0
-  onPointerExitPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerExitGameEvents: []
-  onPointerExitNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerDown: 0
-  onPointerDownSound: ~No Sound~
-  customOnPointerDownSound: 0
-  OnPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerDownPunchPresetCategory: Uncategorized
-  onPointerDownPunchPresetName: DefaultPreset
-  loadOnPointerDownPunchPresetAtRuntime: 0
-  onPointerDownPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerDownGameEvents: []
-  onPointerDownNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerUp: 0
-  onPointerUpSound: ~No Sound~
-  customOnPointerUpSound: 0
-  OnPointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerUpPunchPresetCategory: Uncategorized
-  onPointerUpPunchPresetName: DefaultPreset
-  loadOnPointerUpPunchPresetAtRuntime: 0
-  onPointerUpPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerUpGameEvents: []
-  onPointerUpNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnClickAnimations: 1
-  waitForOnClickAnimation: 1
-  singleClickMode: 0
-  onClickSound: ~No Sound~
-  customOnClickSound: 0
-  OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onClickPunchPresetCategory: Uncategorized
-  onClickPunchPresetName: DefaultPreset
-  loadOnClickPunchPresetAtRuntime: 0
-  onClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onClickGameEvents: []
-  onClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnDoubleClick: 0
-  waitForOnDoubleClickAnimation: 1
-  doubleClickRegisterInterval: 0.2
-  onDoubleClickSound: ~No Sound~
-  customOnDoubleClickSound: 0
-  OnDoubleClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDoubleClickPunchPresetCategory: Uncategorized
-  onDoubleClickPunchPresetName: DefaultPreset
-  loadOnDoubleClickPunchPresetAtRuntime: 0
-  onDoubleClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onDoubleClickGameEvents: []
-  onDoubleClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnLongClick: 0
-  waitForOnLongClickAnimation: 1
-  longClickRegisterInterval: 0.5
-  onLongClickSound: ~No Sound~
-  customOnLongClickSound: 0
-  OnLongClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onLongClickPunchPresetCategory: Uncategorized
-  onLongClickPunchPresetName: DefaultPreset
-  loadOnLongClickPunchPresetAtRuntime: 0
-  onLongClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onLongClickGameEvents: []
-  onLongClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  normalLoopPresetCategory: Uncategorized
-  normalLoopPresetName: DefaultPreset
-  loadNormalLoopPresetAtRuntime: 0
-  normalLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-  selectedLoopPresetCategory: Uncategorized
-  selectedLoopPresetName: DefaultPreset
-  loadSelectedLoopPresetAtRuntime: 0
-  selectedLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
---- !u!114 &322671038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 322671035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 21658090}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!1 &335440857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 335440858}
-  - component: {fileID: 335440860}
-  - component: {fileID: 335440859}
-  m_Layer: 0
-  m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &335440858
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 335440857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 582427092}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &335440859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 335440857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 12
-    m_MaxSize: 20
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Confirm
---- !u!222 &335440860
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 335440857}
+  CharacterType:
+    Name: San Toro
+    Description: Blessed with red hair. Has more luck in encounters.
+    Coins: 5
+    Lives: 3
+    FoodAmount: 10
+    Strength: 5
+    Inventory:
+      EquippedArmor:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        ArmorPoints: 0
+        Type: 0
+      TwoHanded:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
+      RightHand:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
+      LeftHand:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
 --- !u!1 &373350494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,12 +240,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1739501260}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -68.8}
-  m_SizeDelta: {x: 0, y: 137.6}
+  m_AnchoredPosition: {x: 128.5, y: -68.8}
+  m_SizeDelta: {x: -257, y: 137.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373350496
 MonoBehaviour:
@@ -1061,58 +286,79 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373350494}
---- !u!1001 &405544827
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 973204639}
-    m_Modifications:
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.17382003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.98477745
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &405544828 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4684910532646278, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 405544827}
---- !u!1 &405544829 stripped
+--- !u!1 &466899630
 GameObject:
-  m_PrefabParentObject: {fileID: 1240318804643896, guid: 0d7cc89b3dbd02e4b9d212a4109d63d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 405544827}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 466899632}
+  - component: {fileID: 466899631}
+  m_Layer: 0
+  m_Name: Crossroads-of-Life
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &466899631
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466899630}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c8f290481114f7e4395861d7f225efbc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 16.88, y: 11.25}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &466899632
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466899630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.54, y: 1.32, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &523377919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,750 +419,54 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &562470846 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1386899986564688, guid: 2820218e85d01234f83095653b2699aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 822929607}
---- !u!1 &582427091
-GameObject:
+--- !u!1001 &724840594
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 582427092}
-  - component: {fileID: 582427094}
-  - component: {fileID: 582427093}
-  m_Layer: 0
-  m_Name: UIB - ConfirmCharacter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &582427092
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582427091}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1307137496}
-  - {fileID: 335440858}
-  m_Father: {fileID: 1773911776}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &582427093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582427091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 682849f091f20484485c3a8e6c1e0b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonNameReference:
-    buttonName: 
-  onClickSoundReference:
-    onClickSound: 
-  useNormalStateAnimations: 0
-  useHighlightedStateAnimations: 0
-  onClickAnimationSettings:
-    onClickAnimationsPresetName: DefaultPreset
-    punchPositionEnabled: 0
-    punchPositionPunch: {x: 0, y: 20}
-    punchPositionSnapping: 0
-    punchPositionDuration: 0.2
-    punchPositionVibrato: 4
-    punchPositionElasticity: 0.5
-    punchPositionDelay: 0
-    punchRotationEnabled: 0
-    punchRotationPunch: {x: 0, y: 0, z: 30}
-    punchRotationDuration: 0.2
-    punchRotationVibrato: 4
-    punchRotationElasticity: 0.5
-    punchRotationDelay: 0
-    punchScaleEnabled: 0
-    punchScalePunch: {x: 0.2, y: 0.2, z: 0}
-    punchScaleDuration: 0.2
-    punchScaleVibrato: 4
-    punchScaleElasticity: 0.5
-    punchScaleDelay: 0
-  normalAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  highlightedAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  backButton: 0
-  showElements: []
-  hideElements: []
-  gameEvents: []
-  debug: 0
-  buttonCategory: CharacterCustomization
-  buttonName: ConfirmCharacter
-  allowMultipleClicks: 1
-  deselectButtonOnClick: 1
-  disableButtonInterval: 0.4
-  addToNavigationHistory: 0
-  useOnPointerEnter: 0
-  onPointerEnterDisableInterval: 0.4
-  onPointerEnterSound: ~No Sound~
-  customOnPointerEnterSound: 0
-  OnPointerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerEnterPunchPresetCategory: Uncategorized
-  onPointerEnterPunchPresetName: DefaultPreset
-  loadOnPointerEnterPunchPresetAtRuntime: 0
-  onPointerEnterPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerEnterGameEvents: []
-  onPointerEnterNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerExit: 0
-  onPointerExitDisableInterval: 0.4
-  onPointerExitSound: ~No Sound~
-  customOnPointerExitSound: 0
-  OnPointerExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerExitPunchPresetCategory: Uncategorized
-  onPointerExitPunchPresetName: DefaultPreset
-  loadOnPointerExitPunchPresetAtRuntime: 0
-  onPointerExitPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerExitGameEvents: []
-  onPointerExitNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerDown: 0
-  onPointerDownSound: ~No Sound~
-  customOnPointerDownSound: 0
-  OnPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerDownPunchPresetCategory: Uncategorized
-  onPointerDownPunchPresetName: DefaultPreset
-  loadOnPointerDownPunchPresetAtRuntime: 0
-  onPointerDownPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerDownGameEvents: []
-  onPointerDownNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerUp: 0
-  onPointerUpSound: ~No Sound~
-  customOnPointerUpSound: 0
-  OnPointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerUpPunchPresetCategory: Uncategorized
-  onPointerUpPunchPresetName: DefaultPreset
-  loadOnPointerUpPunchPresetAtRuntime: 0
-  onPointerUpPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerUpGameEvents: []
-  onPointerUpNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnClickAnimations: 1
-  waitForOnClickAnimation: 1
-  singleClickMode: 0
-  onClickSound: ~No Sound~
-  customOnClickSound: 0
-  OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onClickPunchPresetCategory: Uncategorized
-  onClickPunchPresetName: DefaultPreset
-  loadOnClickPunchPresetAtRuntime: 0
-  onClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onClickGameEvents: []
-  onClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnDoubleClick: 0
-  waitForOnDoubleClickAnimation: 1
-  doubleClickRegisterInterval: 0.2
-  onDoubleClickSound: ~No Sound~
-  customOnDoubleClickSound: 0
-  OnDoubleClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDoubleClickPunchPresetCategory: Uncategorized
-  onDoubleClickPunchPresetName: DefaultPreset
-  loadOnDoubleClickPunchPresetAtRuntime: 0
-  onDoubleClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onDoubleClickGameEvents: []
-  onDoubleClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnLongClick: 0
-  waitForOnLongClickAnimation: 1
-  longClickRegisterInterval: 0.5
-  onLongClickSound: ~No Sound~
-  customOnLongClickSound: 0
-  OnLongClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onLongClickPunchPresetCategory: Uncategorized
-  onLongClickPunchPresetName: DefaultPreset
-  loadOnLongClickPunchPresetAtRuntime: 0
-  onLongClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onLongClickGameEvents: []
-  onLongClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  normalLoopPresetCategory: Uncategorized
-  normalLoopPresetName: DefaultPreset
-  loadNormalLoopPresetAtRuntime: 0
-  normalLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-  selectedLoopPresetCategory: Uncategorized
-  selectedLoopPresetName: DefaultPreset
-  loadSelectedLoopPresetAtRuntime: 0
-  selectedLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
---- !u!114 &582427094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 582427091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1307137497}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!1 &597675357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 597675358}
-  - component: {fileID: 597675360}
-  - component: {fileID: 597675359}
-  m_Layer: 0
-  m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &597675358
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 597675357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1795220537}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &597675359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 597675357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: fa916789466c10e43a6559c125392796, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 12
-    m_MaxSize: 20
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Female
---- !u!222 &597675360
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 597675357}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1142532946}
+    m_Modifications:
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000038735084
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000025512906
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 489252, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0f017305777b3f542bd5bfc36a4ca8be, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &745550337 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 486422, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+  m_PrefabInternal: {fileID: 2088403681}
 --- !u!1 &769565171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,123 +515,82 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &785492461
+--- !u!1 &811283199
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 785492462}
-  - component: {fileID: 785492464}
-  - component: {fileID: 785492463}
+  - component: {fileID: 811283200}
+  - component: {fileID: 811283202}
+  - component: {fileID: 811283201}
   m_Layer: 0
-  m_Name: Background
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &785492462
+--- !u!224 &811283200
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785492461}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 811283199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1992506212}
-  m_RootOrder: 0
+  m_Father: {fileID: 1725031672}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.5, y: 242.76}
+  m_SizeDelta: {x: 555.4, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &785492463
+--- !u!114 &811283201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785492461}
+  m_GameObject: {fileID: 811283199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a35014516cc65e34a81647023272785c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &785492464
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: fa916789466c10e43a6559c125392796, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Blessed with red hair. Brings luck.
+--- !u!222 &811283202
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 785492461}
---- !u!1001 &822929607
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2070209349}
-    m_Modifications:
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.17382003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.98477745
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2820218e85d01234f83095653b2699aa, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &822929608 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4574853108415188, guid: 2820218e85d01234f83095653b2699aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 822929607}
+  m_GameObject: {fileID: 811283199}
 --- !u!1 &849521666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,9 +599,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 849521667}
-  - component: {fileID: 849521668}
   - component: {fileID: 849521669}
   - component: {fileID: 849521670}
+  - component: {fileID: 849521668}
+  - component: {fileID: 849521671}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -2111,7 +621,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &849521668
 MonoBehaviour:
@@ -2128,164 +638,34 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: FSM
-    startState: NothingSelected
+    startState: Luck Character Selected
     states:
-    - name: NothingSelected
+    - name: Luck Character Selected
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 50
-        y: 196
-        width: 128
+        y: 164
+        width: 190
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: SelectFemale
+          name: ChooseStrengthCharacter
           isSystemEvent: 0
           isGlobal: 0
-        toState: Female
+        toState: Strenght Character Selected
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       - fsmEvent:
-          name: SelectMale
+          name: ChooseCoinCharacter
           isSystemEvent: 0
           isGlobal: 0
-        toState: Male
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000b2cf1000
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 973204638}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 2070209348}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 00000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000
-        paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: Male
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 255
-        y: 140
-        width: 111
-        height: 64
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: SelectFemale
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Female
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: SelectClothed
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: MaleClothed
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: SelectNaked
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: MaleNaked
+        toState: Coin Character Selected
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2312,7 +692,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 973204638}
+            value: {fileID: 357433088}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2320,7 +700,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 2070209348}
+            value: {fileID: 1986856325}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2328,7 +708,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 405544829}
+            value: {fileID: 1290907518}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2409,40 +789,32 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000000100000001000000020000000300000002000000030000000200000004000000050000000400000005000000
         paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: Female
+    - name: Strenght Character Selected
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 256
-        y: 278
-        width: 111
-        height: 64
+        x: 306
+        y: 103.984375
+        width: 207
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: SelectMale
+          name: ChooseLuckCharacter
           isSystemEvent: 0
           isGlobal: 0
-        toState: Male
+        toState: Luck Character Selected
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       - fsmEvent:
-          name: SelectClothed
+          name: ChooseCoinCharacter
           isSystemEvent: 0
           isGlobal: 0
-        toState: FemaleClothed
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: SelectNaked
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: FemaleNaked
+        toState: Coin Character Selected
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2469,7 +841,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 2070209348}
+            value: {fileID: 1290907518}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2477,7 +849,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 973204638}
+            value: {fileID: 357433088}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2485,7 +857,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 562470846}
+            value: {fileID: 1986856325}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2566,40 +938,32 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000000100000001000000020000000300000002000000030000000200000004000000050000000400000005000000
         paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: MaleNaked
+    - name: Coin Character Selected
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 473
-        y: 101.99219
-        width: 137
-        height: 64
+        x: 319
+        y: 331
+        width: 190
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: SelectFemale
+          name: ChooseStrengthCharacter
           isSystemEvent: 0
           isGlobal: 0
-        toState: Female
+        toState: Strenght Character Selected
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       - fsmEvent:
-          name: SelectClothed
+          name: ChooseLuckCharacter
           isSystemEvent: 0
           isGlobal: 0
-        toState: MaleClothed
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: ConfirmCharacter
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: SaveCharacter
+        toState: Luck Character Selected
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2607,13 +971,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000b2cf1000
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000050000000a000000
+        actionHashCodes: b2cf1000b2cf1000b2cf1000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2624,7 +990,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 886219235}
+            value: {fileID: 1290907518}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2632,121 +998,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 405544829}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 00000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000
-        paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: MaleClothed
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 473
-        y: 185
-        width: 137
-        height: 64
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: SelectFemale
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Female
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: SelectNaked
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: MaleNaked
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: ConfirmCharacter
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: SaveCharacter
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000b2cf1000
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
+            value: {fileID: 357433088}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -2754,275 +1006,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 405544829}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 886219235}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 00000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000
-        paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: FemaleClothed
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 473
-        y: 353
-        width: 137
-        height: 64
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: SelectMale
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Male
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: SelectNaked
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: FemaleNaked
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: ConfirmCharacter
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: SaveCharacter
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000b2cf1000
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 562470846}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 1869585725}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 00000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000
-        paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
-        - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: FemaleNaked
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 474
-        y: 269
-        width: 137
-        height: 64
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: SelectMale
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Male
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: SelectClothed
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: FemaleClothed
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: ConfirmCharacter
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: SaveCharacter
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000b2cf1000
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 562470846}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 1869585725}
+            value: {fileID: 1986856325}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -3054,6 +1038,18 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 1
         - useVariable: 0
           name: 
@@ -3067,12 +1063,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000
+        paramDataType: 140000001100000011000000010000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
         paramName:
         - gameObject
         - activate
@@ -3084,232 +1080,21 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000001000000
-    - name: SaveCharacter
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 725.0469
-        y: 233
-        width: 118
-        height: 16
-      isBreakpoint: 0
-      isSequence: 1
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.SendMessage
-        - HutongGames.PlayMaker.Actions.LoadLevelNum
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 91d45a006bd51b01
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams:
-        - FunctionName: SaveCharacter
-          parameterType: None
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          EnumParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            enumName: 
-            intValue: 0
-          ArrayParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - 
-        - 
-        byteData: 000000000100000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 140000000700000007000000150000001000000001000000170000001100000017000000
-        paramName:
         - gameObject
-        - delivery
-        - options
-        - functionCall
-        - levelIndex
-        - additive
-        - loadedEvent
-        - dontDestroyOnLoad
-        - failedEvent
-        paramDataPos: 000000000000000004000000000000000000000008000000000000000000000001000000
-        paramByteDataSize: 000000000400000004000000000000000000000001000000000000000000000000000000
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000100000001000000020000000300000002000000030000000200000004000000050000000400000005000000
+        paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
     events:
-    - name: ConfirmCharacter
+    - name: ChooseCoinCharacter
       isSystemEvent: 0
       isGlobal: 0
-    - name: SelectClothed
+    - name: ChooseLuckCharacter
       isSystemEvent: 0
       isGlobal: 0
-    - name: SelectFemale
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: SelectMale
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: SelectNaked
+    - name: ChooseStrengthCharacter
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -3388,8 +1173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: 0
   overrideTargetFSM: 0
-  targetFSM: {fileID: 849521668}
-  dispatchGameEvents: 0
+  targetFSM: {fileID: 0}
+  dispatchGameEvents: 1
   dispatchButtonClicks: 1
 --- !u!114 &849521670
 MonoBehaviour:
@@ -3403,10 +1188,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharactersAvailable:
-  - {fileID: 405544829}
-  - {fileID: 886219235}
-  - {fileID: 562470846}
-  - {fileID: 1869585725}
+  - {fileID: 1986856325}
+  - {fileID: 1290907518}
+  - {fileID: 357433088}
+--- !u!114 &849521671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849521666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee1bd28f4d52f9498e60327872e2a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectedCharacterNameText: {fileID: 1699962769}
+  SelectedCharacterDescription: {fileID: 811283201}
 --- !u!1 &854934896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,11 +1717,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &886219235 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1239377865469308, guid: 982fae8078a0373458824b9b87a616d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1461144620}
 --- !u!1 &973204638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3934,690 +1726,145 @@ GameObject:
   m_Component:
   - component: {fileID: 973204639}
   m_Layer: 0
-  m_Name: MaleCharacterToBeCreated
+  m_Name: AvailableCharacters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &973204639
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 973204638}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.9990785, z: -0, w: -0.042921793}
+  m_LocalPosition: {x: 0.45, y: -0.7, z: -6.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 405544828}
-  - {fileID: 1461144621}
+  - {fileID: 1079008725}
+  - {fileID: 2088403682}
+  - {fileID: 1361253147}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &1157332021
+  m_LocalEulerAnglesHint: {x: 0, y: 184.92, z: 0}
+--- !u!1001 &1079008724
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 973204639}
+    m_Modifications:
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 111054, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 111054, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+      propertyPath: m_Name
+      value: Ottoman
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1079008725 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 467044, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+  m_PrefabInternal: {fileID: 1079008724}
+--- !u!4 &1079008726 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 419626, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+  m_PrefabInternal: {fileID: 1079008724}
+--- !u!4 &1142532946 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 413670, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+  m_PrefabInternal: {fileID: 1079008724}
+--- !u!1 &1290907518 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1157332022}
-  - component: {fileID: 1157332024}
-  - component: {fileID: 1157332023}
-  m_Layer: 0
-  m_Name: UIB - SelectMale
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1157332022
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1157332021}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 61587654}
-  - {fileID: 1825543910}
-  m_Father: {fileID: 1773911776}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -20}
-  m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1157332023
+  m_PrefabParentObject: {fileID: 169980, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+  m_PrefabInternal: {fileID: 2088403681}
+--- !u!114 &1290907519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1157332021}
+  m_GameObject: {fileID: 1290907518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 682849f091f20484485c3a8e6c1e0b1f, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb53d83f88bef84f87fc9b90d5ada37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNameReference:
-    buttonName: 
-  onClickSoundReference:
-    onClickSound: 
-  useNormalStateAnimations: 0
-  useHighlightedStateAnimations: 0
-  onClickAnimationSettings:
-    onClickAnimationsPresetName: DefaultPreset
-    punchPositionEnabled: 0
-    punchPositionPunch: {x: 0, y: 20}
-    punchPositionSnapping: 0
-    punchPositionDuration: 0.2
-    punchPositionVibrato: 4
-    punchPositionElasticity: 0.5
-    punchPositionDelay: 0
-    punchRotationEnabled: 0
-    punchRotationPunch: {x: 0, y: 0, z: 30}
-    punchRotationDuration: 0.2
-    punchRotationVibrato: 4
-    punchRotationElasticity: 0.5
-    punchRotationDelay: 0
-    punchScaleEnabled: 0
-    punchScalePunch: {x: 0.2, y: 0.2, z: 0}
-    punchScaleDuration: 0.2
-    punchScaleVibrato: 4
-    punchScaleElasticity: 0.5
-    punchScaleDelay: 0
-  normalAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  highlightedAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  backButton: 0
-  showElements: []
-  hideElements: []
-  gameEvents: []
-  debug: 0
-  buttonCategory: CharacterCustomization
-  buttonName: SelectMale
-  allowMultipleClicks: 1
-  deselectButtonOnClick: 1
-  disableButtonInterval: 0.4
-  addToNavigationHistory: 0
-  useOnPointerEnter: 0
-  onPointerEnterDisableInterval: 0.4
-  onPointerEnterSound: ~No Sound~
-  customOnPointerEnterSound: 0
-  OnPointerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerEnterPunchPresetCategory: Uncategorized
-  onPointerEnterPunchPresetName: DefaultPreset
-  loadOnPointerEnterPunchPresetAtRuntime: 0
-  onPointerEnterPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerEnterGameEvents: []
-  onPointerEnterNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerExit: 0
-  onPointerExitDisableInterval: 0.4
-  onPointerExitSound: ~No Sound~
-  customOnPointerExitSound: 0
-  OnPointerExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerExitPunchPresetCategory: Uncategorized
-  onPointerExitPunchPresetName: DefaultPreset
-  loadOnPointerExitPunchPresetAtRuntime: 0
-  onPointerExitPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerExitGameEvents: []
-  onPointerExitNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerDown: 0
-  onPointerDownSound: ~No Sound~
-  customOnPointerDownSound: 0
-  OnPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerDownPunchPresetCategory: Uncategorized
-  onPointerDownPunchPresetName: DefaultPreset
-  loadOnPointerDownPunchPresetAtRuntime: 0
-  onPointerDownPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerDownGameEvents: []
-  onPointerDownNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerUp: 0
-  onPointerUpSound: ~No Sound~
-  customOnPointerUpSound: 0
-  OnPointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerUpPunchPresetCategory: Uncategorized
-  onPointerUpPunchPresetName: DefaultPreset
-  loadOnPointerUpPunchPresetAtRuntime: 0
-  onPointerUpPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerUpGameEvents: []
-  onPointerUpNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnClickAnimations: 1
-  waitForOnClickAnimation: 1
-  singleClickMode: 0
-  onClickSound: ~No Sound~
-  customOnClickSound: 0
-  OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onClickPunchPresetCategory: Uncategorized
-  onClickPunchPresetName: DefaultPreset
-  loadOnClickPunchPresetAtRuntime: 0
-  onClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onClickGameEvents: []
-  onClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnDoubleClick: 0
-  waitForOnDoubleClickAnimation: 1
-  doubleClickRegisterInterval: 0.2
-  onDoubleClickSound: ~No Sound~
-  customOnDoubleClickSound: 0
-  OnDoubleClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDoubleClickPunchPresetCategory: Uncategorized
-  onDoubleClickPunchPresetName: DefaultPreset
-  loadOnDoubleClickPunchPresetAtRuntime: 0
-  onDoubleClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onDoubleClickGameEvents: []
-  onDoubleClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnLongClick: 0
-  waitForOnLongClickAnimation: 1
-  longClickRegisterInterval: 0.5
-  onLongClickSound: ~No Sound~
-  customOnLongClickSound: 0
-  OnLongClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onLongClickPunchPresetCategory: Uncategorized
-  onLongClickPunchPresetName: DefaultPreset
-  loadOnLongClickPunchPresetAtRuntime: 0
-  onLongClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onLongClickGameEvents: []
-  onLongClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  normalLoopPresetCategory: Uncategorized
-  normalLoopPresetName: DefaultPreset
-  loadNormalLoopPresetAtRuntime: 0
-  normalLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-  selectedLoopPresetCategory: Uncategorized
-  selectedLoopPresetName: DefaultPreset
-  loadSelectedLoopPresetAtRuntime: 0
-  selectedLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
---- !u!114 &1157332024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1157332021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 61587655}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  CharacterType:
+    Name: Ristofer
+    Description: Strong like a bull. Starts with immense strength.
+    Coins: 5
+    Lives: 3
+    FoodAmount: 10
+    Strength: 10
+    Inventory:
+      EquippedArmor:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        ArmorPoints: 0
+        Type: 0
+      TwoHanded:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
+      RightHand:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
+      LeftHand:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
 --- !u!1 &1306184429
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,237 +1967,101 @@ RectTransform:
   m_Children:
   - {fileID: 854934897}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1307137495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1307137496}
-  - component: {fileID: 1307137498}
-  - component: {fileID: 1307137497}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1307137496
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1307137495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 582427092}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1307137497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1307137495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9a4a596ee7a9f3a4eb078cb002420dcb, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1307137498
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1307137495}
---- !u!1 &1340333755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1340333756}
-  - component: {fileID: 1340333758}
-  - component: {fileID: 1340333757}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1340333756
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1340333755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1795220537}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1340333757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1340333755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a35014516cc65e34a81647023272785c, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1340333758
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1340333755}
---- !u!1001 &1461144620
+--- !u!4 &1361253147 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008,
+    type: 2}
+  m_PrefabInternal: {fileID: 1673893078}
+--- !u!1001 &1536410794
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 973204639}
+    m_TransformParent: {fileID: 745550337}
     m_Modifications:
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.26
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.17382003
+      value: 0.000000038735084
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.000000025512906
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.98477745
+      value: 0.7071067
       objectReference: {fileID: 0}
-    - target: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+    - target: {fileID: 407016, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 982fae8078a0373458824b9b87a616d7, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 28539539c24919c45acf3ee886aeaa51, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1461144621 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4982416208584994, guid: 982fae8078a0373458824b9b87a616d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1461144620}
---- !u!1 &1515736373
+--- !u!1 &1574060066
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1515736374}
-  - component: {fileID: 1515736376}
-  - component: {fileID: 1515736375}
+  - component: {fileID: 1574060067}
+  - component: {fileID: 1574060069}
+  - component: {fileID: 1574060068}
   m_Layer: 0
-  m_Name: Label
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1515736374
+--- !u!224 &1574060067
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1515736373}
+  m_GameObject: {fileID: 1574060066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 322671036}
-  m_RootOrder: 1
+  m_Father: {fileID: 1595994846}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 7.01, y: -31.6}
+  m_SizeDelta: {x: 361.5, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1515736375
+--- !u!114 &1574060068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1515736373}
+  m_GameObject: {fileID: 1574060066}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -4969,21 +2080,448 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 12
-    m_MaxSize: 20
+    m_MinSize: 10
+    m_MaxSize: 40
     m_Alignment: 4
-    m_AlignByGeometry: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Clothed
---- !u!222 &1515736376
+  m_Text: Characters
+--- !u!222 &1574060069
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1515736373}
+  m_GameObject: {fileID: 1574060066}
+--- !u!224 &1587055553 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+    type: 2}
+  m_PrefabInternal: {fileID: 2091391229}
+--- !u!1 &1595994845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1595994846}
+  - component: {fileID: 1595994848}
+  - component: {fileID: 1595994847}
+  m_Layer: 0
+  m_Name: ChooseCharacterMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1595994846
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595994845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1587055553}
+  - {fileID: 1735254985}
+  - {fileID: 2138690964}
+  - {fileID: 1574060067}
+  m_Father: {fileID: 1739501260}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 450, y: 0}
+  m_SizeDelta: {x: 700, y: 900}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1595994847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595994845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 19172ea88af2b3b448efcf95d46ed324, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1595994848
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595994845}
+--- !u!1001 &1673893078
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 973204639}
+    m_Modifications:
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686547868577956, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589306719382336, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_Name
+      value: San Toro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1589306719382336, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d08bf9dad6ea3c241873cc367c363008, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1693126513
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2088403683}
+    m_Modifications:
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000024689058
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000003615618
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 483816, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: edec575a979a169449fa6dd52ff459b1, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1699962767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1699962768}
+  - component: {fileID: 1699962770}
+  - component: {fileID: 1699962769}
+  m_Layer: 0
+  m_Name: CharacterName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1699962768
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699962767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1725031672}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.5, y: 320}
+  m_SizeDelta: {x: 555.4, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1699962769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699962767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0.020689487, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: fa916789466c10e43a6559c125392796, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: San Toro
+--- !u!222 &1699962770
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699962767}
+--- !u!1 &1725031671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1725031672}
+  m_Layer: 0
+  m_Name: PlayerInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1725031672
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1725031671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1699962768}
+  - {fileID: 811283200}
+  m_Father: {fileID: 1739501260}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 126.33, y: -90.23}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1735254984
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1595994846}
+    m_Modifications:
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 500.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784612556891436, guid: 291da3193c3d27d4c923771511396f58, type: 2}
+      propertyPath: m_Name
+      value: UIB - ChooseCoinCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: buttonName
+      value: ChooseCoinCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657562585498718, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Text
+      value: Ottoman
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 849521670}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectCoinCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 291da3193c3d27d4c923771511396f58, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1735254985 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+    type: 2}
+  m_PrefabInternal: {fileID: 1735254984}
 --- !u!1 &1739501259
 GameObject:
   m_ObjectHideFlags: 0
@@ -5011,8 +2549,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1949352058}
   - {fileID: 373350495}
-  - {fileID: 1773911776}
+  - {fileID: 1595994846}
+  - {fileID: 1725031672}
   m_Father: {fileID: 854934897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5054,781 +2594,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1739501259}
---- !u!1 &1773911775
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1773911776}
-  m_Layer: 0
-  m_Name: CustomizeButtons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1773911776
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1773911775}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1157332022}
-  - {fileID: 1795220537}
-  - {fileID: 1992506212}
-  - {fileID: 322671036}
-  - {fileID: 582427092}
-  m_Father: {fileID: 1739501260}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 269.9, y: -68.8}
-  m_SizeDelta: {x: 539.8, y: 942.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1795220536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1795220537}
-  - component: {fileID: 1795220539}
-  - component: {fileID: 1795220538}
-  m_Layer: 0
-  m_Name: UIB - SelectFemale
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1795220537
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795220536}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1340333756}
-  - {fileID: 597675358}
-  m_Father: {fileID: 1773911776}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -20}
-  m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1795220538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795220536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 682849f091f20484485c3a8e6c1e0b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonNameReference:
-    buttonName: 
-  onClickSoundReference:
-    onClickSound: 
-  useNormalStateAnimations: 0
-  useHighlightedStateAnimations: 0
-  onClickAnimationSettings:
-    onClickAnimationsPresetName: DefaultPreset
-    punchPositionEnabled: 0
-    punchPositionPunch: {x: 0, y: 20}
-    punchPositionSnapping: 0
-    punchPositionDuration: 0.2
-    punchPositionVibrato: 4
-    punchPositionElasticity: 0.5
-    punchPositionDelay: 0
-    punchRotationEnabled: 0
-    punchRotationPunch: {x: 0, y: 0, z: 30}
-    punchRotationDuration: 0.2
-    punchRotationVibrato: 4
-    punchRotationElasticity: 0.5
-    punchRotationDelay: 0
-    punchScaleEnabled: 0
-    punchScalePunch: {x: 0.2, y: 0.2, z: 0}
-    punchScaleDuration: 0.2
-    punchScaleVibrato: 4
-    punchScaleElasticity: 0.5
-    punchScaleDelay: 0
-  normalAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  highlightedAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  backButton: 0
-  showElements: []
-  hideElements: []
-  gameEvents: []
-  debug: 0
-  buttonCategory: CharacterCustomization
-  buttonName: SelectFemale
-  allowMultipleClicks: 1
-  deselectButtonOnClick: 1
-  disableButtonInterval: 0.4
-  addToNavigationHistory: 0
-  useOnPointerEnter: 0
-  onPointerEnterDisableInterval: 0.4
-  onPointerEnterSound: ~No Sound~
-  customOnPointerEnterSound: 0
-  OnPointerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerEnterPunchPresetCategory: Uncategorized
-  onPointerEnterPunchPresetName: DefaultPreset
-  loadOnPointerEnterPunchPresetAtRuntime: 0
-  onPointerEnterPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerEnterGameEvents: []
-  onPointerEnterNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerExit: 0
-  onPointerExitDisableInterval: 0.4
-  onPointerExitSound: ~No Sound~
-  customOnPointerExitSound: 0
-  OnPointerExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerExitPunchPresetCategory: Uncategorized
-  onPointerExitPunchPresetName: DefaultPreset
-  loadOnPointerExitPunchPresetAtRuntime: 0
-  onPointerExitPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerExitGameEvents: []
-  onPointerExitNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerDown: 0
-  onPointerDownSound: ~No Sound~
-  customOnPointerDownSound: 0
-  OnPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerDownPunchPresetCategory: Uncategorized
-  onPointerDownPunchPresetName: DefaultPreset
-  loadOnPointerDownPunchPresetAtRuntime: 0
-  onPointerDownPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerDownGameEvents: []
-  onPointerDownNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerUp: 0
-  onPointerUpSound: ~No Sound~
-  customOnPointerUpSound: 0
-  OnPointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerUpPunchPresetCategory: Uncategorized
-  onPointerUpPunchPresetName: DefaultPreset
-  loadOnPointerUpPunchPresetAtRuntime: 0
-  onPointerUpPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerUpGameEvents: []
-  onPointerUpNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnClickAnimations: 1
-  waitForOnClickAnimation: 1
-  singleClickMode: 0
-  onClickSound: ~No Sound~
-  customOnClickSound: 0
-  OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onClickPunchPresetCategory: Uncategorized
-  onClickPunchPresetName: DefaultPreset
-  loadOnClickPunchPresetAtRuntime: 0
-  onClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onClickGameEvents: []
-  onClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnDoubleClick: 0
-  waitForOnDoubleClickAnimation: 1
-  doubleClickRegisterInterval: 0.2
-  onDoubleClickSound: ~No Sound~
-  customOnDoubleClickSound: 0
-  OnDoubleClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDoubleClickPunchPresetCategory: Uncategorized
-  onDoubleClickPunchPresetName: DefaultPreset
-  loadOnDoubleClickPunchPresetAtRuntime: 0
-  onDoubleClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onDoubleClickGameEvents: []
-  onDoubleClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnLongClick: 0
-  waitForOnLongClickAnimation: 1
-  longClickRegisterInterval: 0.5
-  onLongClickSound: ~No Sound~
-  customOnLongClickSound: 0
-  OnLongClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onLongClickPunchPresetCategory: Uncategorized
-  onLongClickPunchPresetName: DefaultPreset
-  loadOnLongClickPunchPresetAtRuntime: 0
-  onLongClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onLongClickGameEvents: []
-  onLongClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  normalLoopPresetCategory: Uncategorized
-  normalLoopPresetName: DefaultPreset
-  loadNormalLoopPresetAtRuntime: 0
-  normalLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-  selectedLoopPresetCategory: Uncategorized
-  selectedLoopPresetName: DefaultPreset
-  loadSelectedLoopPresetAtRuntime: 0
-  selectedLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
---- !u!114 &1795220539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795220536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1340333757}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!1 &1825543909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1825543910}
-  - component: {fileID: 1825543912}
-  - component: {fileID: 1825543911}
-  m_Layer: 0
-  m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1825543910
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1825543909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1157332022}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1825543911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1825543909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: fa916789466c10e43a6559c125392796, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 12
-    m_MaxSize: 20
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Male
---- !u!222 &1825543912
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1825543909}
 --- !u!1 &1853663576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,765 +2675,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1869585723
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2070209349}
-    m_Modifications:
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.17382003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.98477745
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 64a397761bd2a71489f4bb03a61b709a, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1869585724 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4696991242516502, guid: 64a397761bd2a71489f4bb03a61b709a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1869585723}
---- !u!1 &1869585725 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1058390978816178, guid: 64a397761bd2a71489f4bb03a61b709a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1869585723}
---- !u!1 &1992506211
+--- !u!1 &1949352057
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1992506212}
-  - component: {fileID: 1992506214}
-  - component: {fileID: 1992506213}
+  - component: {fileID: 1949352058}
+  - component: {fileID: 1949352060}
+  - component: {fileID: 1949352059}
   m_Layer: 0
-  m_Name: UIB - SelectNaked
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1992506212
+--- !u!224 &1949352058
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1992506211}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 785492462}
-  - {fileID: 2012199748}
-  m_Father: {fileID: 1773911776}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -122.842606}
-  m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1992506213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1992506211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 682849f091f20484485c3a8e6c1e0b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonNameReference:
-    buttonName: 
-  onClickSoundReference:
-    onClickSound: 
-  useNormalStateAnimations: 0
-  useHighlightedStateAnimations: 0
-  onClickAnimationSettings:
-    onClickAnimationsPresetName: DefaultPreset
-    punchPositionEnabled: 0
-    punchPositionPunch: {x: 0, y: 20}
-    punchPositionSnapping: 0
-    punchPositionDuration: 0.2
-    punchPositionVibrato: 4
-    punchPositionElasticity: 0.5
-    punchPositionDelay: 0
-    punchRotationEnabled: 0
-    punchRotationPunch: {x: 0, y: 0, z: 30}
-    punchRotationDuration: 0.2
-    punchRotationVibrato: 4
-    punchRotationElasticity: 0.5
-    punchRotationDelay: 0
-    punchScaleEnabled: 0
-    punchScalePunch: {x: 0.2, y: 0.2, z: 0}
-    punchScaleDuration: 0.2
-    punchScaleVibrato: 4
-    punchScaleElasticity: 0.5
-    punchScaleDelay: 0
-  normalAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  highlightedAnimationSettings:
-    animationsPresetName: DefaultPreset
-    moveLoop:
-      enabled: 0
-      autoStart: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    rotationLoop:
-      enabled: 0
-      autoStart: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 4
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    scaleLoop:
-      enabled: 0
-      autoStart: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-    fadeLoop:
-      enabled: 0
-      autoStart: 0
-      min: 0
-      max: 1
-      easeType: 1
-      loops: -1
-      loopType: 1
-      time: 0.5
-      delay: 0
-      soundAtStartReference:
-        soundName: ~No Sound~
-      soundAtFinishReference:
-        soundName: ~No Sound~
-      soundAtStart: ~No Sound~
-      soundAtFinish: ~No Sound~
-  backButton: 0
-  showElements: []
-  hideElements: []
-  gameEvents: []
-  debug: 0
-  buttonCategory: CharacterCustomization
-  buttonName: SelectNaked
-  allowMultipleClicks: 1
-  deselectButtonOnClick: 1
-  disableButtonInterval: 0.4
-  addToNavigationHistory: 0
-  useOnPointerEnter: 0
-  onPointerEnterDisableInterval: 0.4
-  onPointerEnterSound: ~No Sound~
-  customOnPointerEnterSound: 0
-  OnPointerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerEnterPunchPresetCategory: Uncategorized
-  onPointerEnterPunchPresetName: DefaultPreset
-  loadOnPointerEnterPunchPresetAtRuntime: 0
-  onPointerEnterPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerEnterGameEvents: []
-  onPointerEnterNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerExit: 0
-  onPointerExitDisableInterval: 0.4
-  onPointerExitSound: ~No Sound~
-  customOnPointerExitSound: 0
-  OnPointerExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerExitPunchPresetCategory: Uncategorized
-  onPointerExitPunchPresetName: DefaultPreset
-  loadOnPointerExitPunchPresetAtRuntime: 0
-  onPointerExitPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerExitGameEvents: []
-  onPointerExitNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerDown: 0
-  onPointerDownSound: ~No Sound~
-  customOnPointerDownSound: 0
-  OnPointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerDownPunchPresetCategory: Uncategorized
-  onPointerDownPunchPresetName: DefaultPreset
-  loadOnPointerDownPunchPresetAtRuntime: 0
-  onPointerDownPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerDownGameEvents: []
-  onPointerDownNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnPointerUp: 0
-  onPointerUpSound: ~No Sound~
-  customOnPointerUpSound: 0
-  OnPointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onPointerUpPunchPresetCategory: Uncategorized
-  onPointerUpPunchPresetName: DefaultPreset
-  loadOnPointerUpPunchPresetAtRuntime: 0
-  onPointerUpPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onPointerUpGameEvents: []
-  onPointerUpNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnClickAnimations: 1
-  waitForOnClickAnimation: 1
-  singleClickMode: 0
-  onClickSound: ~No Sound~
-  customOnClickSound: 0
-  OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onClickPunchPresetCategory: Uncategorized
-  onClickPunchPresetName: DefaultPreset
-  loadOnClickPunchPresetAtRuntime: 0
-  onClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onClickGameEvents: []
-  onClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnDoubleClick: 0
-  waitForOnDoubleClickAnimation: 1
-  doubleClickRegisterInterval: 0.2
-  onDoubleClickSound: ~No Sound~
-  customOnDoubleClickSound: 0
-  OnDoubleClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDoubleClickPunchPresetCategory: Uncategorized
-  onDoubleClickPunchPresetName: DefaultPreset
-  loadOnDoubleClickPunchPresetAtRuntime: 0
-  onDoubleClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onDoubleClickGameEvents: []
-  onDoubleClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  useOnLongClick: 0
-  waitForOnLongClickAnimation: 1
-  longClickRegisterInterval: 0.5
-  onLongClickSound: ~No Sound~
-  customOnLongClickSound: 0
-  OnLongClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onLongClickPunchPresetCategory: Uncategorized
-  onLongClickPunchPresetName: DefaultPreset
-  loadOnLongClickPunchPresetAtRuntime: 0
-  onLongClickPunch:
-    move:
-      enabled: 0
-      punch: {x: 0, y: 20, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    rotate:
-      enabled: 0
-      punch: {x: 0, y: 0, z: 30}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-    scale:
-      enabled: 0
-      punch: {x: 0.2, y: 0.2, z: 0}
-      startDelay: 0
-      duration: 0.3
-      vibrato: 4
-      elasticity: 0.5
-  onLongClickGameEvents: []
-  onLongClickNavigation:
-    addToNavigationHistory: 0
-    show: []
-    hide: []
-  normalLoopPresetCategory: Uncategorized
-  normalLoopPresetName: DefaultPreset
-  loadNormalLoopPresetAtRuntime: 0
-  normalLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-  selectedLoopPresetCategory: Uncategorized
-  selectedLoopPresetName: DefaultPreset
-  loadSelectedLoopPresetAtRuntime: 0
-  selectedLoop:
-    autoStart: 0
-    move:
-      enabled: 0
-      movement: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    rotate:
-      enabled: 0
-      rotation: {x: 0, y: 0, z: 0}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    scale:
-      enabled: 0
-      min: {x: 1, y: 1, z: 1}
-      max: {x: 1.05, y: 1.05, z: 1.05}
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
-    fade:
-      enabled: 0
-      min: 0
-      max: 1
-      easeType: 0
-      ease: 1
-      animationCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      loops: -1
-      loopType: 1
-      startDelay: 0
-      duration: 0.5
---- !u!114 &1992506214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1992506211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 785492463}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!1 &2012199747
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2012199748}
-  - component: {fileID: 2012199750}
-  - component: {fileID: 2012199749}
-  m_Layer: 0
-  m_Name: Label
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2012199748
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2012199747}
+  m_GameObject: {fileID: 1949352057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1992506212}
-  m_RootOrder: 1
+  m_Father: {fileID: 1739501260}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 126.33, y: -68.8}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2012199749
+--- !u!114 &1949352059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2012199747}
+  m_GameObject: {fileID: 1949352057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -6679,26 +2729,75 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: fa916789466c10e43a6559c125392796, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 12
-    m_MaxSize: 20
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Naked
---- !u!222 &2012199750
+  m_Sprite: {fileID: 21300000, guid: a35014516cc65e34a81647023272785c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1949352060
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2012199747}
+  m_GameObject: {fileID: 1949352057}
+--- !u!1 &1986856325 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 111054, guid: 4ce02b04daf044b44948cd396ecb268c, type: 2}
+  m_PrefabInternal: {fileID: 1079008724}
+--- !u!114 &1986856326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1986856325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb53d83f88bef84f87fc9b90d5ada37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterType:
+    Name: Ottoman
+    Description: Thin Jew. Has more coins than other characters.
+    Coins: 10
+    Lives: 3
+    FoodAmount: 5
+    Strength: 3
+    Inventory:
+      EquippedArmor:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        ArmorPoints: 0
+        Type: 0
+      TwoHanded:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
+      RightHand:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
+      LeftHand:
+        Id: 0
+        Durability: 0
+        MaxDurability: 0
+        Name: 
+        PrefabName: 
+        AttackPower: 0
+        Type: 0
 --- !u!1 &2029130070
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,33 +2863,319 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &2070209348
-GameObject:
+--- !u!1001 &2088403681
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2070209349}
-  m_Layer: 0
-  m_Name: FemaleCharacterToBeCreated
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2070209349
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 973204639}
+    m_Modifications:
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 169980, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169980, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+      propertyPath: m_Name
+      value: Ristofer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2088403682 stripped
 Transform:
+  m_PrefabParentObject: {fileID: 428846, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+  m_PrefabInternal: {fileID: 2088403681}
+--- !u!4 &2088403683 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 460394, guid: 1a902e33f62958747be972d6535a92fa, type: 2}
+  m_PrefabInternal: {fileID: 2088403681}
+--- !u!1001 &2091391229
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2070209348}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 822929608}
-  - {fileID: 1869585724}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1595994846}
+    m_Modifications:
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -181.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 500.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 849521670}
+    - target: {fileID: 1784612556891436, guid: 291da3193c3d27d4c923771511396f58, type: 2}
+      propertyPath: m_Name
+      value: UIB - ChooseLuckCharacter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 291da3193c3d27d4c923771511396f58, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &2138690963
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1595994846}
+    m_Modifications:
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 500.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784612556891436, guid: 291da3193c3d27d4c923771511396f58, type: 2}
+      propertyPath: m_Name
+      value: UIB - ChooseStrengthCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: buttonName
+      value: ChooseStrengthCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657562585498718, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: m_Text
+      value: Ristofer
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 849521670}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectStrengthCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 114179253789593900, guid: 291da3193c3d27d4c923771511396f58,
+        type: 2}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 291da3193c3d27d4c923771511396f58, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &2138690964 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224053391084929560, guid: 291da3193c3d27d4c923771511396f58,
+    type: 2}
+  m_PrefabInternal: {fileID: 2138690963}

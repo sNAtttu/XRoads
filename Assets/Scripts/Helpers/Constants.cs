@@ -2,71 +2,84 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Constants
+namespace Helpers
 {
-    public readonly static string TAG_GROUND = "Ground";
-    public readonly static string TAG_GROUNDBEFORECROSSING = "GroundBeforeCrossing";
-    public readonly static string TAG_CROSSING = "Crossing";
-    public readonly static string TAG_MIDDLEPOINT = "MiddlePoint";
-    public readonly static string TAG_GROUNDAFTERCROSSING = "GroundAfterCrossing";
-    public readonly static string TAG_EXIT = "Exit";
-
-    public readonly static string PATH_USERDATA = "/userData.json";
-
-    public readonly static int SCENE_STARTMENU = 0;
-    public readonly static int SCENE_MAIN = 1;
-    public readonly static int SCENE_SHOP = 2;
-
-    public enum Directions
+    public static class Constants
     {
-        Left, Right, Forward, Backward
+        public static readonly string TagGround = "Ground";
+        public static readonly string TagGroundbeforecrossing = "GroundBeforeCrossing";
+        public static readonly string TagCrossing = "Crossing";
+        public static readonly string TagMiddlepoint = "MiddlePoint";
+        public static readonly string TagGroundaftercrossing = "GroundAfterCrossing";
+        public static readonly string TagExit = "Exit";
+
+        public static readonly string PathUserdata = "/userData.json";
+
+        public static readonly int SceneStartmenu = 0;
+        public static readonly int SceneMain = 1;
+        public static readonly int SceneShop = 2;
+
+        public enum Directions
+        {
+            Left, Right, Forward, Backward
+        }
+
     }
 
+    public static class CharacterCreationConstants
+    {
+        public static readonly string EventSelectCoin = "ChooseCoinCharacter";
+        public static readonly string EventSelectLuck = "ChooseLuckCharacter";
+        public static readonly string EventSelectStrength = "ChooseStrengthCharacter";
+
+        public static readonly string CharacterNameLuck = "San Toro";
+        public static readonly string CharacterNameCoin = "Ottoman";
+        public static readonly string CharacterNameStrength = "Ristofer";
+    }
+
+    public static class ShopSceneConstants
+    {
+        public static readonly string EventClearselection = "ClearSelection";
+        public static readonly string EventSelectBlacksmith = "SelectBlacksmith";
+        public static readonly string EventSelectInn = "SelectInn";
+        public static readonly string EventSelectEnchanter = "SelectEnchanter";
+
+        public static readonly string TagBlacksmith = "Blacksmith";
+        public static readonly string TagInn = "Inn";
+        public static readonly string TagEnchanter = "Enchanter";
+
+    }
+
+    public static class StartMenuConstants
+    {
+        public static readonly string EventSettingsfound = "SettingsFound";
+        public static readonly string EventSettingsnotfound = "SettingsNotFound";
+    }
+
+    public static class PlayerConstants
+    {
+        public static readonly string EventRun = "Run";
+        public static readonly string EventWalk = "Walk";
+        public static readonly string EventHitcrossing = "HitCrossing";
+        public static readonly string EventMiddleofcrossing = "MiddleOfCrossing";
+        public static readonly string EventLeavecrossing = "LeaveCrossing";
+        public static readonly string EventExitcrossing = "ExitCrossing";
+
+        public static readonly string EventGoleft = "GoLeft";
+        public static readonly string EventGoright = "GoRight";
+        public static readonly string EventGoforward = "GoForward";
+        public static readonly string EventGobackward = "GoBackward";
+        public static readonly string EventInvalidinput = "InvalidInput";
+
+        public static readonly string StateRunning = "RunningToNextCrossing";
+        public static readonly string StateComingtocrossing = "ComingToCrossing";
+        public static readonly string StateCrossingboundaries = "CrossingBoundaries";
+        public static readonly string StateAtcrossing = "AtCrossing";
+        public static readonly string StateLeavingcrossing = "LeavingCrossing";
+
+        public static readonly string StateChooseleft = "ChooseLeft";
+        public static readonly string StateChooseright = "ChooseRight";
+        public static readonly string StateChooseforward = "ChooseBackward";
+        public static readonly string StateChoosebackward = "ChooseForward";
+    }
 }
-
-public static class ShopSceneConstants
-{
-    public readonly static string EVENT_CLEARSELECTION = "ClearSelection";
-    public readonly static string EVENT_SELECT_BLACKSMITH = "SelectBlacksmith";
-    public readonly static string EVENT_SELECT_INN = "SelectInn";
-    public readonly static string EVENT_SELECT_ENCHANTER = "SelectEnchanter";
-
-    public readonly static string TAG_BLACKSMITH = "Blacksmith";
-    public readonly static string TAG_INN = "Inn";
-    public readonly static string TAG_ENCHANTER = "Enchanter";
-
-}
-
-public static class StartMenuConstants
-{
-    public readonly static string EVENT_SETTINGSFOUND = "SettingsFound";
-    public readonly static string EVENT_SETTINGSNOTFOUND = "SettingsNotFound";
-}
-
-public static class PlayerConstants
-{
-    public readonly static string EVENT_RUN = "Run";
-    public readonly static string EVENT_WALK = "Walk";
-    public readonly static string EVENT_HITCROSSING = "HitCrossing";
-    public readonly static string EVENT_MIDDLEOFCROSSING = "MiddleOfCrossing";
-    public readonly static string EVENT_LEAVECROSSING = "LeaveCrossing";
-    public readonly static string EVENT_EXITCROSSING = "ExitCrossing";
-
-    public readonly static string EVENT_GOLEFT = "GoLeft";
-    public readonly static string EVENT_GORIGHT = "GoRight";
-    public readonly static string EVENT_GOFORWARD = "GoForward";
-    public readonly static string EVENT_GOBACKWARD = "GoBackward";
-    public readonly static string EVENT_INVALIDINPUT = "InvalidInput";
-
-    public readonly static string STATE_RUNNING = "RunningToNextCrossing";
-    public readonly static string STATE_COMINGTOCROSSING = "ComingToCrossing";
-    public readonly static string STATE_CROSSINGBOUNDARIES = "CrossingBoundaries";
-    public readonly static string STATE_ATCROSSING = "AtCrossing";
-    public readonly static string STATE_LEAVINGCROSSING = "LeavingCrossing";
-
-    public readonly static string STATE_CHOOSELEFT = "ChooseLeft";
-    public readonly static string STATE_CHOOSERIGHT = "ChooseRight";
-    public readonly static string STATE_CHOOSEFORWARD = "ChooseBackward";
-    public readonly static string STATE_CHOOSEBACKWARD = "ChooseForward";
-}
-

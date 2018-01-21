@@ -1,79 +1,83 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
+using Classes;
+using Helpers;
+using Services;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StartMenuMessages : MonoBehaviour
+namespace StartMenu
 {
-    private PlayMakerFSM UIManagerFSM;
-    private StartMenuUIManager UIManager;
-
-    private void Awake()
+    public class StartMenuMessages : MonoBehaviour
     {
-        UIManagerFSM = GetComponent<PlayMakerFSM>();
-        UIManager = GetComponent<StartMenuUIManager>();
-    }
+        private PlayMakerFSM _uiManagerFsm;
+        private StartMenuUiManager _uiManager;
 
-    public void LoadUserProfile()
-    {
-        try
+        private void Awake()
         {
-            var userData = FileService.LoadData<User>(Constants.PATH_USERDATA);
-            FileService.UserData = userData;
-            UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSFOUND);
-            UIManager.SetWelcomeTitle(userData.Username);
-            if(userData.CharacterCreated)
+            _uiManagerFsm = GetComponent<PlayMakerFSM>();
+            _uiManager = GetComponent<StartMenuUiManager>();
+        }
+
+        public void LoadUserProfile()
+        {
+            try
             {
-                UIManager.EnableContinueButton();
+                var userData = FileService.LoadData<User>(Constants.PathUserdata);
+                FileService.UserData = userData;
+                _uiManagerFsm.SendEvent(StartMenuConstants.EventSettingsfound);
+                _uiManager.SetWelcomeTitle(userData.Username);
+                if(userData.CharacterCreated)
+                {
+                    _uiManager.EnableContinueButton();
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                Debug.Log("Settings not found, send event");
+                _uiManagerFsm.SendEvent(StartMenuConstants.EventSettingsnotfound);
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Debug.Log("Directory not found, send event");
+                _uiManagerFsm.SendEvent(StartMenuConstants.EventSettingsnotfound);
+            }
+            catch (Exception)
+            {
+                _uiManagerFsm.SendEvent(StartMenuConstants.EventSettingsnotfound);
             }
         }
-        catch (FileNotFoundException)
-        {
-            Debug.Log("Settings not found, send event");
-            UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSNOTFOUND);
-        }
-        catch (DirectoryNotFoundException)
-        {
-            Debug.Log("Directory not found, send event");
-            UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSNOTFOUND);
-        }
-        catch (Exception)
-        {
-            UIManagerFSM.SendEvent(StartMenuConstants.EVENT_SETTINGSNOTFOUND);
-        }
-    }
 
-    public void EnableAll(bool value)
-    {
-        Debug.Log("Mute all: " + value);
-    }
-    public void EnableSounds(bool value)
-    {
-        Debug.Log("Mute sounds " + value);
-    }
-    public void EnableMusic(bool value)
-    {
-        Debug.Log("Mute music: " + value);
-    }
-
-    public void SaveUserAndCreateSettingsFile()
-    {
-        var usernameText = GameObject.FindGameObjectWithTag("UsernameInput").GetComponent<InputField>().text;
-        User user = new User
+        public void EnableAll(bool value)
         {
-            Username = usernameText,
-            Settings = new Settings
+            Debug.Log("Mute all: " + value);
+        }
+        public void EnableSounds(bool value)
+        {
+            Debug.Log("Mute sounds " + value);
+        }
+        public void EnableMusic(bool value)
+        {
+            Debug.Log("Mute music: " + value);
+        }
+
+        public void SaveUserAndCreateSettingsFile()
+        {
+            var usernameText = GameObject.FindGameObjectWithTag("UsernameInput").GetComponent<InputField>().text;
+            User user = new User
             {
-                AllSoundOn = true,
-                MusicOn = true,
-                SoundOn = true,
-            },
-            Character = null
-        };
-        FileService.SaveObject<User>(user, Constants.PATH_USERDATA);
-        UIManager.SetWelcomeTitle(usernameText);
-    }
+                Username = usernameText,
+                Settings = new Settings
+                {
+                    AllSoundOn = true,
+                    MusicOn = true,
+                    SoundOn = true,
+                },
+                Character = null
+            };
+            FileService.SaveObject<User>(user, Constants.PathUserdata);
+            _uiManager.SetWelcomeTitle(usernameText);
+        }
 
+    }
 }

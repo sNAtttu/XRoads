@@ -10,14 +10,14 @@ public class iTweenFSMEvents : MonoBehaviour {
 	public bool donotfinish = false;
 	public bool islooping = false;
 	
-	void iTweenOnStart(int aniTweenID){
-		if(itweenID == aniTweenID){
+	void iTweenOnStart(int aniTweenId){
+		if(itweenID == aniTweenId){
 			itweenFSMAction.Fsm.Event(itweenFSMAction.startEvent);
 		}
 	}
 	
-	void iTweenOnComplete(int aniTweenID){
-		if(itweenID == aniTweenID) {
+	void iTweenOnComplete(int aniTweenId){
+		if(itweenID == aniTweenId) {
 			if(islooping) {
 				if(!donotfinish){
 					itweenFSMAction.Fsm.Event(itweenFSMAction.finishEvent);

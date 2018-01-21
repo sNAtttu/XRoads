@@ -1,61 +1,63 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+using Helpers;
 using UnityEngine;
 
-public class PlayerInputMessages : MonoBehaviour
+namespace Player
 {
-
-    public bool CheckUserInputIsAllowed(Constants.Directions direction)
+    public class PlayerInputMessages : MonoBehaviour
     {
-        var allowedDirections = GetComponent<PlayerState>()
-            .CrossingPlayerEntered
-            .GetComponent<Crossing>().AllowedDirections;
 
-        if (allowedDirections.Contains(direction))
+        public bool CheckUserInputIsAllowed(Constants.Directions direction)
         {
-            return true;
-        }
-        else
-        {
-            GetComponent<PlayerState>().SendPlayerEvent(PlayerConstants.EVENT_INVALIDINPUT);
-            return false;
-        }
+            var allowedDirections = GetComponent<PlayerState>()
+                .CrossingPlayerEntered
+                .GetComponent<Crossing.Crossing>().AllowedDirections;
 
-    }
-
-    public void Rotate(Constants.Directions direction)
-    {
-        if (CheckUserInputIsAllowed(direction))
-        {
-            StartCoroutine(ContinuousRotation(direction));
-        }    
-    }
-
-    IEnumerator ContinuousRotation(Constants.Directions direction)
-    {
-        var playerState = GetComponent<PlayerState>();
-        int degrees = 90;
-        int turnDirection = 1;
-        if (direction == Constants.Directions.Backward)
-            degrees = 180;    
-        if (direction == Constants.Directions.Left)
-            turnDirection = -1;
-        if(direction != Constants.Directions.Forward)
-        {
-            for (var i = 0; i <= degrees; i++)
+            if (allowedDirections.Contains(direction))
             {
-                transform.Rotate(Vector3.up, turnDirection);
-                yield return new WaitForSeconds(0.01f);
+                return true;
+            }
+            else
+            {
+                GetComponent<PlayerState>().SendPlayerEvent(PlayerConstants.EventInvalidinput);
+                return false;
+            }
+
+        }
+
+        public void Rotate(Constants.Directions direction)
+        {
+            if (CheckUserInputIsAllowed(direction))
+            {
+                StartCoroutine(ContinuousRotation(direction));
+            }    
+        }
+
+        IEnumerator ContinuousRotation(Constants.Directions direction)
+        {
+            var playerState = GetComponent<PlayerState>();
+            int degrees = 90;
+            int turnDirection = 1;
+            if (direction == Constants.Directions.Backward)
+                degrees = 180;    
+            if (direction == Constants.Directions.Left)
+                turnDirection = -1;
+            if(direction != Constants.Directions.Forward)
+            {
+                for (var i = 0; i <= degrees; i++)
+                {
+                    transform.Rotate(Vector3.up, turnDirection);
+                    yield return new WaitForSeconds(0.01f);
+                }
+            }
+            if(playerState.GetPlayerState() == PlayerConstants.StateChooseleft ||
+               playerState.GetPlayerState() == PlayerConstants.StateChooseright || 
+               playerState.GetPlayerState() == PlayerConstants.StateChooseforward ||
+               playerState.GetPlayerState() == PlayerConstants.StateChoosebackward)
+            {
+                playerState.SendPlayerEvent(PlayerConstants.EventLeavecrossing);
             }
         }
-        if(playerState.GetPlayerState() == PlayerConstants.STATE_CHOOSELEFT ||
-            playerState.GetPlayerState() == PlayerConstants.STATE_CHOOSERIGHT || 
-            playerState.GetPlayerState() == PlayerConstants.STATE_CHOOSEFORWARD ||
-           playerState.GetPlayerState() == PlayerConstants.STATE_CHOOSEBACKWARD)
-        {
-            playerState.SendPlayerEvent(PlayerConstants.EVENT_LEAVECROSSING);
-        }
-    }
 
+    }
 }

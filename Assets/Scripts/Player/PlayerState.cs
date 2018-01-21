@@ -1,99 +1,101 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Helpers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(PlayMakerFSM))]
-public class PlayerState : MonoBehaviour
+namespace Player
 {
-    private PlayMakerFSM playerFSM;
-    private GameObject crossingPlayerEntered;
-
-    public GameObject CrossingPlayerEntered
+    [RequireComponent(typeof(PlayMakerFSM))]
+    public class PlayerState : MonoBehaviour
     {
-        get
-        {
-            return crossingPlayerEntered;
-        }
+        private PlayMakerFSM _playerFsm;
+        private GameObject _crossingPlayerEntered;
 
-        set
+        public GameObject CrossingPlayerEntered
         {
-            if(value.GetComponent<Crossing>() != null)
+            get
             {
-                crossingPlayerEntered = value;
+                return _crossingPlayerEntered;
             }
-            else
+
+            set
             {
-                crossingPlayerEntered = null;
+                if(value.GetComponent<Crossing.Crossing>() != null)
+                {
+                    _crossingPlayerEntered = value;
+                }
+                else
+                {
+                    _crossingPlayerEntered = null;
+                }
             }
         }
-    }
 
-    // Use this for initialization
-    void Awake()
-    {
-        playerFSM = GetComponent<PlayMakerFSM>();
-    }
-
-    public string GetPlayerState()
-    {
-        return playerFSM.ActiveStateName;
-    }
-
-    public void SendPlayerEvent(string playerEvent)
-    {
-        if (!string.IsNullOrEmpty(playerEvent))
+        // Use this for initialization
+        void Awake()
         {
-            playerFSM.SendEvent(playerEvent);
-        }
-    }
-
-    public void StartScene()
-    {
-        if(GetPlayerState() == "Init")
-        {
-            SendPlayerEvent("Run");
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == Constants.TAG_GROUNDBEFORECROSSING)
-        {
-            SendPlayerEvent(PlayerConstants.EVENT_WALK);
-        }
-        else if(other.tag == Constants.TAG_CROSSING)
-        {
-            CrossingPlayerEntered = other.gameObject;
-            SendPlayerEvent(PlayerConstants.EVENT_HITCROSSING);
-        }
-        else if (other.tag == Constants.TAG_MIDDLEPOINT)
-        {
-            SendPlayerEvent(PlayerConstants.EVENT_MIDDLEOFCROSSING);
-        }
-        else if(other.tag == Constants.TAG_GROUNDAFTERCROSSING)
-        {
-            Debug.Log("After the crossing");
-        }
-        else if(other.tag == Constants.TAG_EXIT)
-        {
-            SceneManager.LoadScene(Constants.SCENE_SHOP);
+            _playerFsm = GetComponent<PlayMakerFSM>();
         }
 
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == Constants.TAG_GROUNDBEFORECROSSING)
+        public string GetPlayerState()
         {
-            Debug.Log("Leaving from ground before");
+            return _playerFsm.ActiveStateName;
         }
-        else if (other.tag == Constants.TAG_CROSSING)
+
+        public void SendPlayerEvent(string playerEvent)
         {
-            Debug.Log("Leaving crossing");
+            if (!string.IsNullOrEmpty(playerEvent))
+            {
+                _playerFsm.SendEvent(playerEvent);
+            }
         }
-        else if (other.tag == Constants.TAG_GROUNDAFTERCROSSING)
+
+        public void StartScene()
         {
-            SendPlayerEvent(PlayerConstants.EVENT_EXITCROSSING);
+            if(GetPlayerState() == "Init")
+            {
+                SendPlayerEvent("Run");
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.tag == Constants.TagGroundbeforecrossing)
+            {
+                SendPlayerEvent(PlayerConstants.EventWalk);
+            }
+            else if(other.tag == Constants.TagCrossing)
+            {
+                CrossingPlayerEntered = other.gameObject;
+                SendPlayerEvent(PlayerConstants.EventHitcrossing);
+            }
+            else if (other.tag == Constants.TagMiddlepoint)
+            {
+                SendPlayerEvent(PlayerConstants.EventMiddleofcrossing);
+            }
+            else if(other.tag == Constants.TagGroundaftercrossing)
+            {
+                Debug.Log("After the crossing");
+            }
+            else if(other.tag == Constants.TagExit)
+            {
+                SceneManager.LoadScene(Constants.SceneShop);
+            }
+
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.tag == Constants.TagGroundbeforecrossing)
+            {
+                Debug.Log("Leaving from ground before");
+            }
+            else if (other.tag == Constants.TagCrossing)
+            {
+                Debug.Log("Leaving crossing");
+            }
+            else if (other.tag == Constants.TagGroundaftercrossing)
+            {
+                SendPlayerEvent(PlayerConstants.EventExitcrossing);
+            }
         }
     }
 }

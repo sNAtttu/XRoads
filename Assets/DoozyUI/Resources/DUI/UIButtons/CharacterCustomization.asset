@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Name: CharacterCustomization
   m_EditorClassIdentifier: 
   data:
-  - SelectClothed
-  - SelectFemale
-  - SelectMale
-  - SelectNaked
   - ConfirmCharacter
+  - ChooseLuckCharacter
+  - ChooseStrengthCharacter
+  - ChooseCoinCharacter

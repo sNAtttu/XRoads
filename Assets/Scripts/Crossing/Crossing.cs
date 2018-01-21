@@ -1,16 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
-public class Crossing : MonoBehaviour
+namespace Crossing
 {
-    public GameObject MiddlePoint;
-
-    public List<Constants.Directions> AllowedDirections;
-
-    public Vector3 GetMiddlePointLocation()
+    public class Crossing : MonoBehaviour
     {
-        return MiddlePoint.transform.position;
-    }
+        public GameObject MiddlePoint;
 
+        public List<Constants.Directions> AllowedDirections;
+
+        public Vector3 GetMiddlePointLocation()
+        {
+            return MiddlePoint.transform.position;
+        }
+
+    }
 }

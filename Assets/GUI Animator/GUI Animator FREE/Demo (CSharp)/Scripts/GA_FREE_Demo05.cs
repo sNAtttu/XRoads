@@ -173,12 +173,12 @@ public class GA_FREE_Demo05 : MonoBehaviour
 	}
 	
 	// Disable all buttons for a few seconds
-	IEnumerator DisableButtonForSeconds(GameObject GO, float DisableTime)
+	IEnumerator DisableButtonForSeconds(GameObject GO, float disableTime)
 	{
 		// Disable all buttons
 		GUIAnimSystemFREE.Instance.EnableButton(GO.transform, false);
 		
-		yield return new WaitForSeconds(DisableTime);
+		yield return new WaitForSeconds(disableTime);
 		
 		// Enable all buttons
 		GUIAnimSystemFREE.Instance.EnableButton(GO.transform, true);

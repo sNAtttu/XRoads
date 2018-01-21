@@ -775,10 +775,10 @@ namespace DoozyUI
         /// <param name="startPosition">The initial position of the target.</param>
         /// <param name="animation">The animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="instantAnimation">If true, the animation will happen instantly (without creating a tween).</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void Move(RectTransform target, Vector3 startPosition, Anim animation, UnityAction OnStart, UnityAction OnComplete, bool instantAnimation = false, bool forced = false)
+        public static void Move(RectTransform target, Vector3 startPosition, Anim animation, UnityAction OnStart, UnityAction onComplete, bool instantAnimation = false, bool forced = false)
         {
             if (!animation.move.enabled) { if (!forced) { return; } }
             string tweenId = "";
@@ -808,7 +808,7 @@ namespace DoozyUI
                   .SetUpdate(true)
                   .SetId(tweenId)
                   .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                  .OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                  .OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
             switch (animation.move.easeType)
             {
                 case EaseType.Ease: tween.SetEase(animation.move.ease); break;
@@ -855,10 +855,10 @@ namespace DoozyUI
         /// <param name="startRotation">The initial rotation of the target.</param>
         /// <param name="animation">The animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="instantAnimation">If true, the animation will happen instantly (without creating a tween).</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void Rotate(RectTransform target, Vector3 startRotation, Anim animation, UnityAction OnStart, UnityAction OnComplete, bool instantAnimation = false, bool forced = false)
+        public static void Rotate(RectTransform target, Vector3 startRotation, Anim animation, UnityAction OnStart, UnityAction onComplete, bool instantAnimation = false, bool forced = false)
         {
             if (!animation.rotate.enabled) { if (!forced) { return; } }
             string tweenId = "";
@@ -888,7 +888,7 @@ namespace DoozyUI
                   .SetUpdate(isTimeScaleIndependent)
                   .SetId(tweenId)
                   .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                  .OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                  .OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
             switch (animation.rotate.easeType)
             {
                 case EaseType.Ease: tween.SetEase(animation.rotate.ease); break;
@@ -903,10 +903,10 @@ namespace DoozyUI
         /// <param name="startScale">The initial scale of the target.</param>
         /// <param name="animation">The animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="instantAnimation">If true, the animation will happen instantly (without creating a tween).</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void Scale(RectTransform target, Vector3 startScale, Anim animation, UnityAction OnStart, UnityAction OnComplete, bool instantAnimation = false, bool forced = false)
+        public static void Scale(RectTransform target, Vector3 startScale, Anim animation, UnityAction OnStart, UnityAction onComplete, bool instantAnimation = false, bool forced = false)
         {
             if (!animation.scale.enabled) { if (!forced) { return; } }
             string tweenId = "";
@@ -936,7 +936,7 @@ namespace DoozyUI
                   .SetUpdate(isTimeScaleIndependent)
                   .SetId(tweenId)
                   .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                  .OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                  .OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
             switch (animation.scale.easeType)
             {
                 case EaseType.Ease: tween.SetEase(animation.scale.ease); break;
@@ -951,10 +951,10 @@ namespace DoozyUI
         /// <param name="startAlpha">CanvasGroup's start alpha. This is the animation's center.</param>
         /// <param name="animation">The animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="instantAnimation">If true, the animation will happen instantly (without creating a tween).</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void Fade(RectTransform target, float startAlpha, Anim animation, UnityAction OnStart, UnityAction OnComplete, bool instantAnimation = false, bool forced = false)
+        public static void Fade(RectTransform target, float startAlpha, Anim animation, UnityAction OnStart, UnityAction onComplete, bool instantAnimation = false, bool forced = false)
         {
             if (!animation.fade.enabled) { if (!forced) { return; } }
             string tweenId = "";
@@ -990,7 +990,7 @@ namespace DoozyUI
                        .SetUpdate(isTimeScaleIndependent)
                        .SetId(tweenId)
                        .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                       .OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                       .OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
             switch (animation.fade.easeType)
             {
                 case EaseType.Ease: tween.SetEase(animation.fade.ease); break;
@@ -1032,10 +1032,10 @@ namespace DoozyUI
         /// <param name="startPosition">The initial position of the target. This is the animation's center.</param>
         /// <param name="loop">The loop animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="id">Adds an extra string to the loop's tween id. Used to differentiate several loops animations created for the same target.</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void LoopMove(RectTransform target, Vector3 startPosition, Loop loop, UnityAction OnStart, UnityAction OnComplete, string id = "", bool forced = false)
+        public static void LoopMove(RectTransform target, Vector3 startPosition, Loop loop, UnityAction OnStart, UnityAction onComplete, string id = "", bool forced = false)
         {
             if (!loop.move.enabled) { if (!forced) { return; } }
             // positionA <---> startPosition <---> poistionB
@@ -1058,7 +1058,7 @@ namespace DoozyUI
                           case EaseType.Ease: tween.SetEase(loop.move.ease); break;
                           case EaseType.AnimationCurve: tween.SetEase(loop.move.animationCurve); break;
                       }
-                      tween.OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                      tween.OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
                       tween.Play();
                   })
                   .Pause();
@@ -1071,10 +1071,10 @@ namespace DoozyUI
         /// <param name="startRotation">The initial rotation of the target. This is the animation's center.</param>
         /// <param name="loop">The loop animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="id">Adds an extra string to the loop's tween id. Used to differentiate several loops animations created for the same target.</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void LoopRotate(RectTransform target, Vector3 startRotation, Loop loop, UnityAction OnStart, UnityAction OnComplete, string id = "", bool forced = false)
+        public static void LoopRotate(RectTransform target, Vector3 startRotation, Loop loop, UnityAction OnStart, UnityAction onComplete, string id = "", bool forced = false)
         {
             if (!loop.rotate.enabled) { if (!forced) { return; } }
 
@@ -1100,7 +1100,7 @@ namespace DoozyUI
                           case EaseType.Ease: tween.SetEase(loop.rotate.ease); break;
                           case EaseType.AnimationCurve: tween.SetEase(loop.rotate.animationCurve); break;
                       }
-                      tween.OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                      tween.OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
                       tween.Play();
                   })
                   .Pause();
@@ -1113,10 +1113,10 @@ namespace DoozyUI
         /// <param name="startScale">The initial rotation of the target. This is the animation's center.</param>
         /// <param name="loop">The loop animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="id">Adds an extra string to the loop's tween id. Used to differentiate several loops animations created for the same target.</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void LoopScale(RectTransform target, Vector3 startScale, Loop loop, UnityAction OnStart, UnityAction OnComplete, string id = "", bool forced = false)
+        public static void LoopScale(RectTransform target, Vector3 startScale, Loop loop, UnityAction OnStart, UnityAction onComplete, string id = "", bool forced = false)
         {
             if (!loop.scale.enabled) { if (!forced) { return; } }
             // loop.scale.min <---> startScale <---> loop.scale.max
@@ -1137,7 +1137,7 @@ namespace DoozyUI
                           case EaseType.Ease: tween.SetEase(loop.scale.ease); break;
                           case EaseType.AnimationCurve: tween.SetEase(loop.scale.animationCurve); break;
                       }
-                      tween.OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                      tween.OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
                       tween.Play();
                   })
                   .Pause();
@@ -1150,10 +1150,10 @@ namespace DoozyUI
         /// <param name="startAlpha">The initial rotation of the target. This is the animation's center.</param>
         /// <param name="loop">The loop animation settings.</param>
         /// <param name="OnStart">Callback listener.</param>
-        /// <param name="OnComplete">Callback listener.</param>
+        /// <param name="onComplete">Callback listener.</param>
         /// <param name="id">Adds an extra string to the loop's tween id. Used to differentiate several loops animations created for the same target.</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
-        public static void LoopFade(RectTransform target, float startAlpha, Loop loop, UnityAction OnStart, UnityAction OnComplete, string id = "", bool blocksRaycasts = false, bool forced = false)
+        public static void LoopFade(RectTransform target, float startAlpha, Loop loop, UnityAction OnStart, UnityAction onComplete, string id = "", bool blocksRaycasts = false, bool forced = false)
         {
             if (!loop.fade.enabled) { if (!forced) { return; } }
             CanvasGroup canvasGroup = target.GetComponent<CanvasGroup>() != null ? target.GetComponent<CanvasGroup>() : target.gameObject.AddComponent<CanvasGroup>();
@@ -1177,7 +1177,7 @@ namespace DoozyUI
                                case EaseType.Ease: tween.SetEase(loop.fade.ease); break;
                                case EaseType.AnimationCurve: tween.SetEase(loop.fade.animationCurve); break;
                            }
-                           tween.OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } });
+                           tween.OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } });
                            tween.Play();
                        })
                        .Pause();
@@ -1193,28 +1193,28 @@ namespace DoozyUI
         /// <param name="startAlpha">CanvasGroup's start alpha. This is the animation's center.</param>
         /// <param name="loop">The loop animation settings.</param>
         /// <param name="OnStartMoveLoop">Callback listener.</param>
-        /// <param name="OnCompleteMoveLoop">Callback listener.</param>
-        /// <param name="OnStartRotateLoop">Callback listener.</param>
-        /// <param name="OnCompleteRotateLoop">Callback listener.</param>
-        /// <param name="OnStartScaleLoop">Callback listener.</param>
-        /// <param name="OnCompleteScaleLoop">Callback listener.</param>
-        /// <param name="OnStartFadeLoop">Callback listener.</param>
-        /// <param name="OnCompleteFadeLoop">Callback listener.</param>
+        /// <param name="onCompleteMoveLoop">Callback listener.</param>
+        /// <param name="onStartRotateLoop">Callback listener.</param>
+        /// <param name="onCompleteRotateLoop">Callback listener.</param>
+        /// <param name="onStartScaleLoop">Callback listener.</param>
+        /// <param name="onCompleteScaleLoop">Callback listener.</param>
+        /// <param name="onStartFadeLoop">Callback listener.</param>
+        /// <param name="onCompleteFadeLoop">Callback listener.</param>
         /// <param name="id">Adds an extra string to the loop's tween id. Used to differentiate several loops animations created for the same target.</param>
         /// <param name="blocksRaycasts">Does the CanvasGroup (that is attached automatically to this target) block raycasting (allow collision). Or, in other words, false means that it ignores clicks (for UIElement) and true means that it registeres clicks (for UIButtons).</param>
         /// <param name="forced">If true, it will initiate this animation, regardless if it's enabled or not.</param>
         public static void SetupLoops(
             RectTransform target, Vector3 startPosition, Vector3 startRotation, Vector3 startScale, float startAlpha, Loop loop,
-            UnityAction OnStartMoveLoop, UnityAction OnCompleteMoveLoop,
-            UnityAction OnStartRotateLoop, UnityAction OnCompleteRotateLoop,
-            UnityAction OnStartScaleLoop, UnityAction OnCompleteScaleLoop,
-            UnityAction OnStartFadeLoop, UnityAction OnCompleteFadeLoop,
+            UnityAction OnStartMoveLoop, UnityAction onCompleteMoveLoop,
+            UnityAction onStartRotateLoop, UnityAction onCompleteRotateLoop,
+            UnityAction onStartScaleLoop, UnityAction onCompleteScaleLoop,
+            UnityAction onStartFadeLoop, UnityAction onCompleteFadeLoop,
             string id = "", bool blocksRaycasts = false, bool forced = false)
         {
-            LoopMove(target, startPosition, loop, OnStartMoveLoop, OnCompleteMoveLoop, id, forced);
-            LoopRotate(target, startRotation, loop, OnStartRotateLoop, OnCompleteRotateLoop, id, forced);
-            LoopScale(target, startScale, loop, OnStartScaleLoop, OnCompleteScaleLoop, id, forced);
-            LoopFade(target, startAlpha, loop, OnStartFadeLoop, OnCompleteFadeLoop, id, blocksRaycasts, forced);
+            LoopMove(target, startPosition, loop, OnStartMoveLoop, onCompleteMoveLoop, id, forced);
+            LoopRotate(target, startRotation, loop, onStartRotateLoop, onCompleteRotateLoop, id, forced);
+            LoopScale(target, startScale, loop, onStartScaleLoop, onCompleteScaleLoop, id, forced);
+            LoopFade(target, startAlpha, loop, onStartFadeLoop, onCompleteFadeLoop, id, blocksRaycasts, forced);
         }
         /// <summary>
         /// Plays all the loops that have been previously set up for the target RectTransform.
@@ -1269,14 +1269,14 @@ namespace DoozyUI
         /// <param name="startPosition">RectTranform's start position (target.anchoredPosition). This will also be its end position.</param>
         /// <param name="punch">The punch animation settings.</param>
         /// <param name="forced">If true, it will fire this animation, regardless if it's enabled or not.</param>
-        public static void PunchMove(RectTransform target, Vector3 startPosition, Punch punch, UnityAction OnStart, UnityAction OnComplete, bool forced = false)
+        public static void PunchMove(RectTransform target, Vector3 startPosition, Punch punch, UnityAction OnStart, UnityAction onComplete, bool forced = false)
         {
             if (!punch.move.enabled) { if (!forced) { return; } }
             target.DOPunchAnchorPos(punch.move.punch, punch.move.duration, punch.move.vibrato, punch.move.elasticity)
                   .SetDelay(punch.move.startDelay)
                   .SetUpdate(isTimeScaleIndependent)
                   .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                  .OnComplete(() => { target.DOAnchorPos3D(startPosition, DEFAULT_DURATION_ONCOMPLETE).OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } }).Play(); })
+                  .OnComplete(() => { target.DOAnchorPos3D(startPosition, DEFAULT_DURATION_ONCOMPLETE).OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } }).Play(); })
                   .Play();
         }
         /// <summary>
@@ -1288,14 +1288,14 @@ namespace DoozyUI
         /// <param name="startRotation">RectTranform's start localRotation. This will also be its end localRotation.</param>
         /// <param name="punch">The punch animation settings.</param>
         /// <param name="forced">If true, it will fire this animation, regardless if it's enabled or not.</param>
-        public static void PunchRotate(RectTransform target, Vector3 startRotation, Punch punch, UnityAction OnStart, UnityAction OnComplete, bool forced = false)
+        public static void PunchRotate(RectTransform target, Vector3 startRotation, Punch punch, UnityAction OnStart, UnityAction onComplete, bool forced = false)
         {
             if (!punch.rotate.enabled) { if (!forced) { return; } }
             target.DOPunchRotation(punch.rotate.punch, punch.rotate.duration, punch.rotate.vibrato, punch.rotate.elasticity)
                   .SetDelay(punch.rotate.startDelay)
                   .SetUpdate(isTimeScaleIndependent)
                   .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                  .OnComplete(() => { target.DOLocalRotate(startRotation, DEFAULT_DURATION_ONCOMPLETE).OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } }).Play(); })
+                  .OnComplete(() => { target.DOLocalRotate(startRotation, DEFAULT_DURATION_ONCOMPLETE).OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } }).Play(); })
                   .Play();
         }
         /// <summary>
@@ -1306,14 +1306,14 @@ namespace DoozyUI
         /// <param name="startScale">RectTranform's start localScale. This will also be its end localScale.</param>
         /// <param name="punch">The punch animation settings.</param>
         /// <param name="forced">If true, it will fire this animation, regardless if it's enabled or not.</param>
-        public static void PunchScale(RectTransform target, Vector3 startScale, Punch punch, UnityAction OnStart, UnityAction OnComplete, bool forced = false)
+        public static void PunchScale(RectTransform target, Vector3 startScale, Punch punch, UnityAction OnStart, UnityAction onComplete, bool forced = false)
         {
             if (!punch.scale.enabled) { if (!forced) { return; } }
             target.DOPunchScale(punch.scale.punch, punch.scale.duration, punch.scale.vibrato, punch.scale.elasticity)
                   .SetDelay(punch.scale.startDelay)
                   .SetUpdate(isTimeScaleIndependent)
                   .OnStart(() => { if (OnStart != null) { OnStart.Invoke(); } })
-                  .OnComplete(() => { target.DOScale(startScale, DEFAULT_DURATION_ONCOMPLETE).OnComplete(() => { if (OnComplete != null) { OnComplete.Invoke(); } }).Play(); })
+                  .OnComplete(() => { target.DOScale(startScale, DEFAULT_DURATION_ONCOMPLETE).OnComplete(() => { if (onComplete != null) { onComplete.Invoke(); } }).Play(); })
                   .Play();
         }
         #endregion

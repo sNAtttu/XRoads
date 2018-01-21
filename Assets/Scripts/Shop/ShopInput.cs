@@ -7,11 +7,11 @@ public class ShopInput : MonoBehaviour
 {
     public Text FoodAmountText;
 
-    private ShopInventoryManager inventory;
+    private ShopInventoryManager _inventory;
 
     private void Start()
     {
-        inventory = GetComponent<ShopInventoryManager>();
+        _inventory = GetComponent<ShopInventoryManager>();
     }
 
     public void IncreaseFoodAmount()
@@ -19,14 +19,14 @@ public class ShopInput : MonoBehaviour
         int currentAmount = int.Parse(FoodAmountText.text);
         currentAmount++;
         FoodAmountText.text = string.Format("{0}", currentAmount);
-        inventory.ChangeFoodAmount(true);
+        _inventory.ChangeFoodAmount(true);
     }
     public void DecreaseFoodAmount()
     {
         int currentAmount = int.Parse(FoodAmountText.text);
         currentAmount--;
         FoodAmountText.text = string.Format("{0}", currentAmount);
-        inventory.ChangeFoodAmount(false);
+        _inventory.ChangeFoodAmount(false);
     }
     public void RepairAll()
     {

@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-[Serializable]
-public class User
+namespace Classes
 {
-    public string Username;
-    public Settings Settings;
-    public Character Character;
-    public bool CharacterCreated = false;
+    [Serializable]
+    public class User
+    {
+        public string Username;
+        public Settings Settings;
+        public Character Character;
+        public bool CharacterCreated = false;
+    }
 }

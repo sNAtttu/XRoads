@@ -1135,293 +1135,293 @@ namespace DoozyUI
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        /// <param name="_buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, string _message, Sprite _icon, string[] _buttonNames, string[] _buttonTexts, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        /// <param name="buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, string message, Sprite icon, string[] buttonNames, string[] buttonTexts, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _message, _icon, _buttonNames, _buttonTexts, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, message, icon, buttonNames, buttonTexts, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        /// <param name="_buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, string _message, Sprite _icon, string[] _buttonNames, string[] _buttonTexts, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        /// <param name="buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, string message, Sprite icon, string[] buttonNames, string[] buttonTexts, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _message, _icon, _buttonNames, _buttonTexts, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, message, icon, buttonNames, buttonTexts, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, string _message, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, string message, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _message, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, message, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, string _message, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, string message, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _message, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, message, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, string _message, Sprite _icon, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, string message, Sprite icon, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _message, _icon, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, message, icon, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, string _message, Sprite _icon, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, string message, Sprite icon, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _message, _icon, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, message, icon, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, string _message, Sprite _icon, string[] _buttonNames, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, string message, Sprite icon, string[] buttonNames, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _message, _icon, _buttonNames, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, message, icon, buttonNames, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_message">The message you want to show in the message area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, string _message, Sprite _icon, string[] _buttonNames, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="message">The message you want to show in the message area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, string message, Sprite icon, string[] buttonNames, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _message, _icon, _buttonNames, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, message, icon, buttonNames, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, Sprite _icon, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, Sprite icon, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _icon, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, icon, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, Sprite _icon, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, Sprite icon, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _icon, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, icon, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, Sprite _icon, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, Sprite icon, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _icon, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, icon, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_icon">The sprite you want the notification icon to have (if linked)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, Sprite _icon, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="icon">The sprite you want the notification icon to have (if linked)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, Sprite icon, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _icon, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, icon, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string[] _buttonNames, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string[] buttonNames, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _buttonNames, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, buttonNames, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string[] _buttonNames, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string[] buttonNames, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _buttonNames, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, buttonNames, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        /// <param name="_buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string[] _buttonNames, string[] _buttonTexts, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        /// <param name="buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string[] buttonNames, string[] buttonTexts, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _buttonNames, _buttonTexts, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, buttonNames, buttonTexts, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        /// <param name="_buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string[] _buttonNames, string[] _buttonTexts, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        /// <param name="buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string[] buttonNames, string[] buttonTexts, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _buttonNames, _buttonTexts, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, buttonNames, buttonTexts, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, string[] _buttonNames, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, string[] buttonNames, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _buttonNames, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, buttonNames, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, string[] _buttonNames, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, string[] buttonNames, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _buttonNames, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, buttonNames, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefabName.
         /// </summary>
         /// <param name="_prefabName">The prefab name</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        /// <param name="_buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
-        public static UINotification ShowNotification(string _prefabName, float _lifetime, bool _addToNotificationQueue, string _title, string[] _buttonNames, string[] _buttonTexts, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        /// <param name="buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
+        public static UINotification ShowNotification(string _prefabName, float lifetime, bool addToNotificationQueue, string title, string[] buttonNames, string[] buttonTexts, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefabName, _lifetime, _addToNotificationQueue, _title, _buttonNames, _buttonTexts, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefabName, lifetime, addToNotificationQueue, title, buttonNames, buttonTexts, buttonCallback, hideCallback);
         }
         /// <summary>
         /// Show a premade notification with the given settings, using a prefab GameObject reference.
         /// </summary>
         /// <param name="_prefab">The prefab GameObject reference</param>
-        /// <param name="_lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
-        /// <param name="_addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
-        /// <param name="_title">The text you want to show in the title area (if linked)</param>
-        /// <param name="_buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
-        /// <param name="_buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
-        public static UINotification ShowNotification(GameObject _prefab, float _lifetime, bool _addToNotificationQueue, string _title, string[] _buttonNames, string[] _buttonTexts, UnityAction[] _buttonCallback = null, UnityAction _hideCallback = null)
+        /// <param name="lifetime">How long will the notification be on the screen. Infinite lifetime is -1</param>
+        /// <param name="addToNotificationQueue">Should this notification be added to the NotificationQueue or shown rightaway</param>
+        /// <param name="title">The text you want to show in the title area (if linked)</param>
+        /// <param name="buttonNames">The button names you want the notification to have (from left to right). These values are the ones that we listen to as button click</param>
+        /// <param name="buttonTexts">The text on the buttons (example: 'OK', 'Cancel', 'Yes', 'No' and so on)</param>
+        public static UINotification ShowNotification(GameObject _prefab, float lifetime, bool addToNotificationQueue, string title, string[] buttonNames, string[] buttonTexts, UnityAction[] buttonCallback = null, UnityAction hideCallback = null)
         {
-            return NotificationManager.ShowNotification(_prefab, _lifetime, _addToNotificationQueue, _title, _buttonNames, _buttonTexts, _buttonCallback, _hideCallback);
+            return NotificationManager.ShowNotification(_prefab, lifetime, addToNotificationQueue, title, buttonNames, buttonTexts, buttonCallback, hideCallback);
         }
         #endregion
 

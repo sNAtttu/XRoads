@@ -215,10 +215,10 @@ namespace DoozyUI
             name = DUI.DEFAULT_ELEMENT_NAME;
         }
 
-        public NavigationPointer(string Category, string Name)
+        public NavigationPointer(string Category, string name)
         {
             category = Category;
-            name = Name;
+            this.name = name;
         }
 
         public NavigationPointer Copy()
@@ -277,10 +277,10 @@ namespace DoozyUI
         public int categoryIndex = 0;
         public int nameIndex = 0;
 
-        public EditorNavigationPointer(int CategoryIndex, int NameIndex)
+        public EditorNavigationPointer(int CategoryIndex, int nameIndex)
         {
             categoryIndex = CategoryIndex;
-            nameIndex = NameIndex;
+            this.nameIndex = nameIndex;
         }
 
         public EditorNavigationPointer Copy()

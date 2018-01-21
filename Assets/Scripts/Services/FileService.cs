@@ -1,43 +1,45 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
+using Classes;
 using UnityEngine;
 
-public static class FileService
+namespace Services
 {
-    public static User UserData;
-
-    public static void SaveObject<T>(T Object, string filePath)
+    public static class FileService
     {
-        var jsonData = JsonUtility.ToJson(Object);
-        var path = Application.persistentDataPath + filePath;
-        File.WriteAllText(path, jsonData);
-    }
+        public static User UserData;
 
-    public static T LoadData<T>(string filePath)
-    {
-        try
+        public static void SaveObject<T>(T Object, string filePath)
         {
+            var jsonData = JsonUtility.ToJson(Object);
             var path = Application.persistentDataPath + filePath;
-            var jsonData = File.ReadAllText(path);
-            T loadedObject = JsonUtility.FromJson<T>(jsonData);
-            return loadedObject;
+            File.WriteAllText(path, jsonData);
         }
-        catch(FileNotFoundException fex)
+
+        public static T LoadData<T>(string filePath)
         {
-            Debug.LogError(fex);
-            throw fex;
-        }
-        catch(DirectoryNotFoundException dex)
-        {
-            Debug.LogError(dex);
-            throw dex;
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError(ex);
-            throw ex;
+            try
+            {
+                var path = Application.persistentDataPath + filePath;
+                var jsonData = File.ReadAllText(path);
+                T loadedObject = JsonUtility.FromJson<T>(jsonData);
+                return loadedObject;
+            }
+            catch(FileNotFoundException fex)
+            {
+                Debug.LogError(fex);
+                throw fex;
+            }
+            catch(DirectoryNotFoundException dex)
+            {
+                Debug.LogError(dex);
+                throw dex;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError(ex);
+                throw ex;
+            }
         }
     }
 }

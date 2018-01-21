@@ -1,29 +1,64 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using System.Linq;
+using Classes;
+using Helpers;
+using Player;
+using Services;
+using UnityEngine;
 
-public class CharacterCreationMessages : MonoBehaviour
+namespace CharacterCreation
 {
-    public List<GameObject> CharactersAvailable;
-
-    public void SaveCharacter()
+    public class CharacterCreationMessages : MonoBehaviour
     {
-        var userData = FileService.UserData;
-        if(userData == null)
+        public List<GameObject> CharactersAvailable;
+
+        private void Start()
         {
-            userData = FileService.LoadData<User>(Constants.PATH_USERDATA);
+            SelectLuckCharacter();
         }
-        var selectedCharacter = CharactersAvailable.Where(c => c.activeSelf).FirstOrDefault();
-        if(userData != null && selectedCharacter != null)
+
+        public void SaveCharacter()
         {
-            userData.Character.SelectedPrefab = selectedCharacter.name;
-            userData.CharacterCreated = true;
-            FileService.SaveObject<User>(userData, Constants.PATH_USERDATA);
+            var userData = FileService.UserData ?? FileService.LoadData<User>(Constants.PathUserdata);
+            var selectedCharacter = CharactersAvailable.FirstOrDefault(c => c.activeSelf);
+            if(userData != null && selectedCharacter != null)
+            {
+                userData.CharacterCreated = true;
+                FileService.SaveObject<User>(userData, Constants.PathUserdata);
+            }
+            else
+            {
+                Debug.LogWarning("User hasn't selected character or data json is not in cache");
+            }
         }
-        else
+
+
+        public void SelectLuckCharacter()
         {
-            Debug.LogWarning("User hasn't selected character or data json is not in cache");
+            GetComponent<PlayMakerFSM>().SendEvent(CharacterCreationConstants.EventSelectLuck);
+            var selectedCharacter = CharactersAvailable.FirstOrDefault(c => c.activeSelf);
+            if (selectedCharacter != null)
+                GetComponent<CharacterUiHandler>()
+                    .SetCharacterNameText(selectedCharacter.GetComponent<PlayerInformation>());
+           
+        }
+        public void SelectStrengthCharacter()
+        {
+            GetComponent<PlayMakerFSM>().SendEvent(CharacterCreationConstants.EventSelectStrength);
+            var selectedCharacter = CharactersAvailable.FirstOrDefault(c => c.activeSelf);
+            if (selectedCharacter != null)
+                GetComponent<CharacterUiHandler>()
+                    .SetCharacterNameText(selectedCharacter.GetComponent<PlayerInformation>());
+            
+        }
+        public void SelectCoinCharacter()
+        {
+            GetComponent<PlayMakerFSM>().SendEvent(CharacterCreationConstants.EventSelectCoin);
+            var selectedCharacter = CharactersAvailable.FirstOrDefault(c => c.activeSelf);
+            if (selectedCharacter != null)
+                GetComponent<CharacterUiHandler>()
+                    .SetCharacterNameText(selectedCharacter.GetComponent<PlayerInformation>());
+            
         }
     }
 }
